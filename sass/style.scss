@@ -30,7 +30,7 @@ body {
 	width: 100%;
 	height: 100%;
 	color: $black;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	background: $white;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -144,39 +144,41 @@ select, textarea {
 .entry-title {
 
 	.sub-title {
-		color: #60687B;
 		display: block;
+		font-weight: 700;
+		color: $primary;
 	}
 
 	.title {
 		color: $black;
 	}
 
+	.exb {
+		font-weight: 800;
+	}
+
+	.seb {
+		font-weight: 600;
+	}
+
 	p {
 		margin: 0;
+		color: $black;
 	}
 
-	&.white-desc {
+	.dark_white {
+		color: $secondary;
+	}
+
+	&.white-entry-title {
+
+		.title {
+			color: $white;
+		}
 
 		p {
-			color: $white
+			color: $white;
 		}
-	}
-
-	.white {
-		color: $white;
-	}
-
-	.base {
-		color: $black;
-	}
-
-	.gray {
-		color: #60687B;
-	}
-
-	.black {
-		color: $black;
 	}
 }
 
@@ -252,17 +254,12 @@ HEADER STYLES
     }
 
     &.stop {
-    	background: $white;
-    	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
+    	background: $black;
+    	box-shadow: 0px 0px 40px rgb(62 62 62 / 43%);
     }
 
     .navbar {
-    	padding: 0;
-
-    	.container-fluid {
-    		padding-left: 50px;
-    		padding-right: 50px;
-    	}
+    	padding: 0; 
 
     	.container {
     		padding-left: 15px;
@@ -276,6 +273,20 @@ HEADER STYLES
     			.navbar-brand {
     				margin: 0;
     				padding: 0;
+
+    				.text {
+    					color: $white;
+						display: block;  
+						font-weight: bold;
+						@include transition(all .3s ease);
+    				}
+
+    				&:hover, &:focus {
+
+    					.text {
+    						color: $primary;
+    					}
+    				}
     			}
     		}
     	}
@@ -284,23 +295,24 @@ HEADER STYLES
     		flex-grow: initial;
 
     		.navbar-nav {
-    			margin-left: -15px;
-    			margin-right: -15px;
+    			margin-left: -22px;
+    			margin-right: -22px;
 
     			> li {
-    				padding-left: 15px;
-    				padding-right: 15px;
+    				padding-left: 22px;
+    				padding-right: 22px;
 
     				&:last-child {
     					margin-right: 0;
     				}
 
     				> a {
-    					color: $black;
+    					color: $white;
     					display: block;
-    					font-size: 16px;
-    					font-weight: 400;
-    					line-height: 24px;
+    					font-size: 15px;
+    					font-weight: 600;
+    					line-height: 21px;
+    					text-transform: uppercase;
     					@include transition(all 0.3s ease);
     				}
 
@@ -316,8 +328,9 @@ HEADER STYLES
 
     							&:after {
     								border: 0;
-    								content: "";
-    								font-size: 6px;
+    								content: "\f107";
+    								font-size: 21px;
+    								padding-left: 5px;
     								font-family: "zetta-hotels";
     								vertical-align: middle;
     							}
@@ -353,9 +366,9 @@ HEADER STYLES
     							> a {
     								color: $white;
     								display: block;
-    								font-size: 16px;
-    								font-weight: 400;
-    								line-height: 24px;
+    								font-size: 15px;
+    								font-weight: 600;
+    								line-height: 21px;
     								padding: 7.5px 15px;
     								@include transition(all 0.3s ease);
     							}
@@ -383,67 +396,13 @@ HEADER STYLES
     				&.active, &:hover, &:focus {
 
     					> a {
-    						color: $black;
-    					}
-    				}
-    			}
-    		}
-
-    		.navbar-nav-right {
-    			font-size: 0;
-    			margin-right: 0;
-    			margin-bottom: 0;
-    			margin-left: 50px;
-    			align-items: center;
-
-    			li {
-    				padding-left: 0;
-    				padding-right: 0;
-
-    				.social-media {
-    					font-size: 0;
-    					line-height: 0;
-    					margin-bottom: 0;
-    					margin-left: -5px;
-    					margin-right: -5px;
-
-    					li {
-    						padding-left: 5px;
-    						padding-right: 5px;
-
-    						a {
-    							width: 32px;
-    							height: 32px;
-    							color: $white;
-    							display: block;
-    							font-size: 12px;
-    							line-height: 32px;
-    							background: $black;
-    							text-align: center;
-    							border-radius: 500px;
-    							@include transition(all 0.3s ease);
-
-    							@each $name, $color in $social-colors {
-
-    								&.icon-#{$name} {
-    									background: $color;
-
-    									&:hover {
-    										background: darken($color, 20%);
-    									}
-    								}
-    							}
-    						}
+    						color: $primary;
     					}
     				}
     			}
     		}
     	}
     }
-}
-
-.header_gutter {
-	height: 100px;
 }
 
 .sidr {
@@ -457,7 +416,7 @@ HEADER STYLES
     overflow-y: auto;
     padding: 30px 25px;
     padding-top: 34px;
-    background: $white;
+    background: $black;
     overflow-x: hidden;
     box-shadow: 0px 0px 6px rgba($black, 0.3);
 
@@ -483,6 +442,7 @@ HEADER STYLES
 					margin: 0;
 					padding: 0;
 					display: block;
+					cursor: pointer;
 				}
 			}
 
@@ -498,7 +458,7 @@ HEADER STYLES
 						}
 
 						> a {
-							color: $black;
+							color: $white;
 							display: block;
 							font-size: 18px;
 							font-weight: 400;
@@ -527,6 +487,7 @@ HEADER STYLES
 								line-height: 0;
 								position: inherit;
 								margin: 12px 0 0 20px;
+								background: $black;
 
 								li {
 									padding-bottom: 10px;
@@ -536,7 +497,7 @@ HEADER STYLES
 									}
 
 									a {
-										color: $black;
+										color: $white;
 										display: block;
 										font-size: 18px;
 										font-weight: 400;
@@ -561,45 +522,7 @@ HEADER STYLES
 							}
 						}
 					}
-				}
-
-				.social-media {
-					font-size: 0;
-					line-height: 0;
-					margin-top: 30px;
-					margin-bottom: 0;
-					margin-left: -5px;
-					margin-right: -5px;
-
-					li {
-						padding-left: 5px;
-						padding-right: 5px;
-
-						a {
-							width: 32px;
-							height: 32px;
-							color: $white;
-							display: block;
-							font-size: 12px;
-							line-height: 32px;
-							background: $black;
-							text-align: center;
-							border-radius: 500px;
-							@include transition(all 0.3s ease);
-
-							@each $name, $color in $social-colors {
-
-								&.icon-#{$name} {
-									background: $color;
-
-									&:hover {
-										background: darken($color, 20%);
-									}
-								}
-							}
-						}
-					}
-				}
+				} 
 			}
 		}
 	}
@@ -661,7 +584,7 @@ HEADER STYLES
     	height: 4px;
     	display: block;
     	border-radius: 0;
-    	background-color: $black;
+    	background-color: $white;
 	    @include transition(transform 150ms linear 150ms);
 
 	    &:not(:last-child) {
@@ -673,46 +596,38 @@ HEADER STYLES
 /***********************************
 BREADCRUMB STYLES
 ***********************************/
-.breadcrumb-wrapper {
-	padding: 0;
-	background: transparent;
-}
-
 .breadcrumb {
 	border: 0;
 	margin: 0;
 	z-index: 2;
+	padding: 0;
 	border-radius: 0;
 	position: relative;
-	padding: 30px 0 12px;
 	background: transparent;
-	border-bottom: 1px solid $black;
 
-	color: $black;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 20px;
+	color: $white; 
+	font-weight: 500; 
 	vertical-align: middle;
-	text-transform: uppercase;
-	@include letter-spacing(100, 14);
+	text-transform: uppercase; 
 
 	span {
 
 		&.angle-right {
-			padding-left: 5px;
-			padding-right: 5px;
+			padding-left: 8px;
+			padding-right: 8px;
 			vertical-align: middle;
 		}
 	}
 
 	.current-page {
-		color: $black !important;
+		color: $white !important;
 		text-decoration: none !important;
 	}
 
 	a {
-		color: $black;
+		color: $white;
 		vertical-align: middle;
+		@include transition(all .3s ease);
 
 		&:hover, &:focus {
 			color: $primary;
@@ -720,68 +635,60 @@ BREADCRUMB STYLES
 		}
 	}
 }
-
 /***********************************
 HOME STYLES
 ***********************************/
 .banner {
-	padding: 68px 0 76px;
+	z-index: 1;
+	position: relative;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		z-index: -1;
+		opacity: 0.6;
+		position: absolute;
+		background: #000;
+
+	}
 
 	.container {
 		position: relative;
 	}
 
 	.content {
+		padding: 130px 0px 102px;
 
-		.title {
+		.entry-title {
 
-		}
-
-		.sub-title {
-			color: $black;
-			margin-top: 12px;
-		}
-
-		.media {
-			margin-top: 43px;
-
-			img {
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-
-		.scrollDown {
-			border: 0;
-			padding: 0;
-			width: 72px;
-			height: 72px;
-			color: $white;
-			font-size: 21px;
-			margin-top: 50px;
-			line-height: 72px;
-			background: $black;
-			text-align: center;
-			border-radius: 500px;
-			@include transition(all 0.3s ease);
-
-			&:hover, &:focus {
-				color: $white;
-				background: $black;
+			.title {
+				margin-bottom: 15px;
 			}
 		}
 	}
 
-	.background {
-		top: -800px;
-		z-index: -1;
-		left: -600px;
-		margin-left: auto;
-		position: absolute;
-		margin-right: auto;
-	}
+	&.home-banner {
+
+		.content {
+			padding: 215px 0;
+
+			.entry-title {
+				max-width: 583px;
+
+				p {
+					max-width: 352px;
+
+					+ p {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	} 
 }
-
 
 /***********************************
 FOOTER STYLES
@@ -832,8 +739,8 @@ FOOTER STYLES
 }
 
 .footer {
-	padding: 90px 0 40px;
 	background: #121212; 
+	padding: 90px 0 40px;
 
 	.widget {
 

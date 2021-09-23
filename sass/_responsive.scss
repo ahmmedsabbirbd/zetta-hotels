@@ -3,29 +3,6 @@ MEDIA QUERIES
 ***********************************/
 @media only screen and (max-width: 1460px) {
 
-    /***********************************
-    HEADER STYLES
-    ***********************************/
-    .header {
-
-        .navbar {
-
-            .navbar-collapse {
-
-                .navbar-nav-right {
-                    margin-left: 40px;
-                }
-            }
-        }
-    }
-
-    /***********************************
-    BREADCRUMB STYLES
-    ***********************************/
-    .breadcrumb {
-        padding: 25px 0 10px;
-    }
-
     
 }/* 1460 */
 
@@ -34,27 +11,6 @@ MEDIA QUERIES
     .container-fluid {
         padding-left: 30px;
         padding-right: 30px;
-    }
-
-    /***********************************
-    HEADER STYLES
-    ***********************************/
-    .header {
-
-        .navbar {
-
-            .container-fluid {
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-
-            .navbar-collapse {
-
-                .navbar-nav-right {
-                    margin-left: 30px;
-                }
-            }
-        }
     }
 
     /***********************************
@@ -103,8 +59,21 @@ MEDIA QUERIES
                 }
 
                 .navbar-nav-right {
-                    margin-right: 0;
-                    margin-left: 20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .banner {
+
+        .content {
+            padding: 125px 0 95px;
+
+            .entry-title {
+
+                .title {
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -164,22 +133,18 @@ MEDIA QUERIES
                 .navbar-nav {
 
                     &:not(.navbar-nav-right) {
-                        margin-left: -10px;
-                        margin-right: -10px;
+                        margin-left: -15px;
+                        margin-right: -15px;
 
                         > li {
-                            padding-left: 10px;
-                            padding-right: 10px;
+                            padding-left: 15px;
+                            padding-right: 15px;
 
                             &:nth-child(3) {
                                 display: none;
                             }
                         }
                     }
-                }
-
-                .navbar-nav-right {
-                    margin-left: 15px;
                 }
             }
         }
@@ -245,19 +210,8 @@ MEDIA QUERIES
                 }
             }
         }
-    }
+    } 
 
-    .header_gutter {
-        height: 80px;
-    }
-
-    /***********************************
-    BREADCRUMB STYLES
-    ***********************************/
-    .breadcrumb {
-        padding-top: 20px;
-    }
- 
     /***********************************
     FOOTER STYLES
     ***********************************/ 
@@ -359,28 +313,24 @@ MEDIA QUERIES
                     &:not(.navbar-nav-right) {
                         display: none;
                     }
-                }
+                } 
+            }
+        }
+    } 
 
-                .navbar-nav-right {
+    .banner {
 
-                    > li {
+        .content {
+            padding: 115px 0 90px;
 
-                        &.social {
-                            display: none;
-                        }
-                    }
+            .entry-title {
+
+                .title {
+                    margin-bottom: 10px;
                 }
             }
         }
     }
-
-    /***********************************
-    BREADCRUMB STYLES
-    ***********************************/
-    .breadcrumb {
-        padding-top: 15px;
-    }
-
     /***********************************
     FOOTER STYLES
     ***********************************/
@@ -438,70 +388,5 @@ MEDIA QUERIES
 
     p {
         margin: 0 0 20px;
-    }
-
-    /***********************************
-    CONNECT STYLES
-    ***********************************/
-    .connect-page {
-        padding-top: 30px;
-    }
-
-     /***********************************
-    BLOG STYLES
-    ***********************************/
-    .blog-featured {
-
-        .blog-post {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-
-            &.big {
-
-                .text {
-                    padding: 15px;
-
-                    .title {
-                        font-size: 21px;
-                        line-height: 30px;
-                    }
-                }
-            }
-        }
-    }
-
-    .blog-post {
-        display: block !important;
-
-        .media {
-            max-width: 100%;
-            margin-right: 0;
-            min-width: inherit;
-            margin-bottom: 15px;
-            float: none !important;
-        }
-
-        .text {
-
-            .title {
-                font-size: 18px;
-                line-height: 26px;
-            }
-        }
-    }
-
-    /***********************************
-    FOOTER STYLES
-    ***********************************/
-    .footer {
-
-        .copyright-wrapper {
-            display: block !important;
-        }
-
-        .social-media {
-            margin-top: 20px;
-        }
-    }
-
+    } 
 }/* 480 */

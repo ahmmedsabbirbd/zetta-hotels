@@ -9,8 +9,8 @@ BASE STYLES
 ***********************************/
 @font-face {
   font-family: "zetta-hotels";
-  src: url("fonts/zetta-hotels.eot?66511726");
-  src: url("fonts/zetta-hotels.eot?66511726#iefix") format("embedded-opentype"), url("fonts/zetta-hotels.woff2?66511726") format("woff2"), url("fonts/zetta-hotels.woff?66511726") format("woff"), url("fonts/zetta-hotels.ttf?66511726") format("truetype"), url("fonts/zetta-hotels.svg?66511726#zetta-hotels") format("svg");
+  src: url("fonts/zetta-hotels.eot?59108018");
+  src: url("fonts/zetta-hotels.eot?59108018#iefix") format("embedded-opentype"), url("fonts/zetta-hotels.woff2?59108018") format("woff2"), url("fonts/zetta-hotels.woff?59108018") format("woff"), url("fonts/zetta-hotels.ttf?59108018") format("truetype"), url("fonts/zetta-hotels.svg?59108018#zetta-hotels") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -94,6 +94,10 @@ BASE STYLES
   content: "";
 }
 
+.icon-carret:before {
+  content: "";
+}
+
 *:not(ul):not(ol) {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -129,7 +133,6 @@ body {
   width: 100%;
   height: 100%;
   color: #000;
-  overflow-x: hidden;
   background: #FFF;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -333,29 +336,31 @@ select:focus, textarea:hover, textarea:focus {
 }
 
 .entry-title .sub-title {
-  color: #60687B;
   display: block;
+  font-weight: 700;
+  color: #5863F8;
 }
 .entry-title .title {
   color: #000;
 }
+.entry-title .exb {
+  font-weight: 800;
+}
+.entry-title .seb {
+  font-weight: 600;
+}
 .entry-title p {
   margin: 0;
-}
-.entry-title.white-desc p {
-  color: #FFF;
-}
-.entry-title .white {
-  color: #FFF;
-}
-.entry-title .base {
   color: #000;
 }
-.entry-title .gray {
-  color: #60687B;
+.entry-title .dark_white {
+  color: #B1B1B1;
 }
-.entry-title .black {
-  color: #000;
+.entry-title.white-entry-title .title {
+  color: #FFF;
+}
+.entry-title.white-entry-title p {
+  color: #FFF;
 }
 
 .container {
@@ -505,16 +510,12 @@ HEADER STYLES
   background: transparent;
 }
 .header.stop {
-  background: #FFF;
-  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
+  background: #000;
+  -webkit-box-shadow: 0px 0px 40px rgba(62, 62, 62, 0.43);
+          box-shadow: 0px 0px 40px rgba(62, 62, 62, 0.43);
 }
 .header .navbar {
   padding: 0;
-}
-.header .navbar .container-fluid {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 .header .navbar .container {
   padding-left: 15px;
@@ -524,28 +525,39 @@ HEADER STYLES
   margin: 0;
   padding: 0;
 }
+.header .navbar .navbar-header .logo .navbar-brand .text {
+  color: #FFF;
+  display: block;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .navbar .navbar-header .logo .navbar-brand:hover .text, .header .navbar .navbar-header .logo .navbar-brand:focus .text {
+  color: #5863F8;
+}
 .header .navbar .navbar-collapse {
   -webkit-box-flex: initial;
       -ms-flex-positive: initial;
           flex-grow: initial;
 }
 .header .navbar .navbar-collapse .navbar-nav {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -22px;
+  margin-right: -22px;
 }
 .header .navbar .navbar-collapse .navbar-nav > li {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 .header .navbar .navbar-collapse .navbar-nav > li:last-child {
   margin-right: 0;
 }
 .header .navbar .navbar-collapse .navbar-nav > li > a {
-  color: #000;
+  color: #FFF;
   display: block;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -554,8 +566,9 @@ HEADER STYLES
 }
 .header .navbar .navbar-collapse .navbar-nav > li.dropdown > a .dropdown-toggle:after {
   border: 0;
-  content: "";
-  font-size: 6px;
+  content: "";
+  font-size: 21px;
+  padding-left: 5px;
   font-family: "zetta-hotels";
   vertical-align: middle;
 }
@@ -587,9 +600,9 @@ HEADER STYLES
 .header .navbar .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu > li > a {
   color: #FFF;
   display: block;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
   padding: 7.5px 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -604,144 +617,7 @@ HEADER STYLES
   visibility: visible;
 }
 .header .navbar .navbar-collapse .navbar-nav > li.active > a, .header .navbar .navbar-collapse .navbar-nav > li:hover > a, .header .navbar .navbar-collapse .navbar-nav > li:focus > a {
-  color: #000;
-}
-.header .navbar .navbar-collapse .navbar-nav-right {
-  font-size: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li {
-  padding-left: 0;
-  padding-right: 0;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media {
-  font-size: 0;
-  line-height: 0;
-  margin-bottom: 0;
-  margin-left: -5px;
-  margin-right: -5px;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a {
-  width: 32px;
-  height: 32px;
-  color: #FFF;
-  display: block;
-  font-size: 12px;
-  line-height: 32px;
-  background: #000;
-  text-align: center;
-  border-radius: 500px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-facebook {
-  background: #3B5998;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-facebook:hover {
-  background: #1e2e4f;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-gplus {
-  background: #DC4E41;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-gplus:hover {
-  background: #9b271c;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-instagram {
-  background: #DC3C8B;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-instagram:hover {
-  background: #971b58;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-linkedin {
-  background: #007AB9;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-linkedin:hover {
-  background: #003753;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-pinterest {
-  background: #EB274D;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-pinterest:hover {
-  background: #9d0f2a;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-qq {
-  background: #FEBF1B;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-qq:hover {
-  background: #b28101;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-quora {
-  background: #b92b27;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-quora:hover {
-  background: #651715;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-reddit-alien {
-  background: #FF5600;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-reddit-alien:hover {
-  background: #993400;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-sina-weibo {
-  background: #E6162D;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-sina-weibo:hover {
-  background: #890d1b;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-snapchat-ghost {
-  background: #FFFC00;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-snapchat-ghost:hover {
-  background: #999700;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-telegram {
-  background: #0088cc;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-telegram:hover {
-  background: #004466;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-twitter {
-  background: #55ACEE;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-twitter:hover {
-  background: #147bc9;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-vkontakte {
-  background: #5181b8;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-vkontakte:hover {
-  background: #2f4f74;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-wechat {
-  background: #7bb32e;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-wechat:hover {
-  background: #436219;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-whatsapp {
-  background: #25D366;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-whatsapp:hover {
-  background: #167c3c;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-youtube {
-  background: #FF0000;
-}
-.header .navbar .navbar-collapse .navbar-nav-right li .social-media li a.icon-youtube:hover {
-  background: #990000;
-}
-
-.header_gutter {
-  height: 100px;
+  color: #5863F8;
 }
 
 .sidr {
@@ -755,7 +631,7 @@ HEADER STYLES
   overflow-y: auto;
   padding: 30px 25px;
   padding-top: 34px;
-  background: #FFF;
+  background: #000;
   overflow-x: hidden;
   -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
@@ -778,6 +654,7 @@ HEADER STYLES
   margin: 0;
   padding: 0;
   display: block;
+  cursor: pointer;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li {
   padding-bottom: 15px;
@@ -786,7 +663,7 @@ HEADER STYLES
   padding-bottom: 0;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li > a {
-  color: #000;
+  color: #FFF;
   display: block;
   font-size: 18px;
   font-weight: 400;
@@ -810,6 +687,7 @@ HEADER STYLES
   line-height: 0;
   position: inherit;
   margin: 12px 0 0 20px;
+  background: #000;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.dropdown .dropdown-menu li {
   padding-bottom: 10px;
@@ -818,7 +696,7 @@ HEADER STYLES
   padding-bottom: 0;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.dropdown .dropdown-menu li a {
-  color: #000;
+  color: #FFF;
   display: block;
   font-size: 18px;
   font-weight: 400;
@@ -831,127 +709,6 @@ HEADER STYLES
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.active > a, .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li:hover > a, .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li:focus > a {
   color: #5863F8;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media {
-  font-size: 0;
-  line-height: 0;
-  margin-top: 30px;
-  margin-bottom: 0;
-  margin-left: -5px;
-  margin-right: -5px;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a {
-  width: 32px;
-  height: 32px;
-  color: #FFF;
-  display: block;
-  font-size: 12px;
-  line-height: 32px;
-  background: #000;
-  text-align: center;
-  border-radius: 500px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-facebook {
-  background: #3B5998;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-facebook:hover {
-  background: #1e2e4f;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-gplus {
-  background: #DC4E41;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-gplus:hover {
-  background: #9b271c;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-instagram {
-  background: #DC3C8B;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-instagram:hover {
-  background: #971b58;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-linkedin {
-  background: #007AB9;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-linkedin:hover {
-  background: #003753;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-pinterest {
-  background: #EB274D;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-pinterest:hover {
-  background: #9d0f2a;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-qq {
-  background: #FEBF1B;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-qq:hover {
-  background: #b28101;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-quora {
-  background: #b92b27;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-quora:hover {
-  background: #651715;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-reddit-alien {
-  background: #FF5600;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-reddit-alien:hover {
-  background: #993400;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-sina-weibo {
-  background: #E6162D;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-sina-weibo:hover {
-  background: #890d1b;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-snapchat-ghost {
-  background: #FFFC00;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-snapchat-ghost:hover {
-  background: #999700;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-telegram {
-  background: #0088cc;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-telegram:hover {
-  background: #004466;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-twitter {
-  background: #55ACEE;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-twitter:hover {
-  background: #147bc9;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-vkontakte {
-  background: #5181b8;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-vkontakte:hover {
-  background: #2f4f74;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-wechat {
-  background: #7bb32e;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-wechat:hover {
-  background: #436219;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-whatsapp {
-  background: #25D366;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-whatsapp:hover {
-  background: #167c3c;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-youtube {
-  background: #FF0000;
-}
-.sidr .sidr-inner .mobile-header .navigation .social-media li a.icon-youtube:hover {
-  background: #990000;
 }
 
 .navbar-toggle {
@@ -1000,7 +757,7 @@ HEADER STYLES
   height: 4px;
   display: block;
   border-radius: 0;
-  background-color: #000;
+  background-color: #FFF;
   -webkit-transition: transform 150ms linear 150ms;
   -webkit-transition: -webkit-transform 150ms linear 150ms;
   transition: -webkit-transform 150ms linear 150ms;
@@ -1014,40 +771,33 @@ HEADER STYLES
 /***********************************
 BREADCRUMB STYLES
 ***********************************/
-.breadcrumb-wrapper {
-  padding: 0;
-  background: transparent;
-}
-
 .breadcrumb {
   border: 0;
   margin: 0;
   z-index: 2;
+  padding: 0;
   border-radius: 0;
   position: relative;
-  padding: 30px 0 12px;
   background: transparent;
-  border-bottom: 1px solid #000;
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  color: #FFF;
+  font-weight: 500;
   vertical-align: middle;
   text-transform: uppercase;
-  letter-spacing: 1.4px;
 }
 .breadcrumb span.angle-right {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
   vertical-align: middle;
 }
 .breadcrumb .current-page {
-  color: #000 !important;
+  color: #FFF !important;
   text-decoration: none !important;
 }
 .breadcrumb a {
-  color: #000;
+  color: #FFF;
   vertical-align: middle;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .breadcrumb a:hover, .breadcrumb a:focus {
   color: #5863F8;
@@ -1058,48 +808,40 @@ BREADCRUMB STYLES
 HOME STYLES
 ***********************************/
 .banner {
-  padding: 68px 0 76px;
+  z-index: 1;
+  position: relative;
+}
+.banner:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  opacity: 0.6;
+  position: absolute;
+  background: #000;
 }
 .banner .container {
   position: relative;
 }
-.banner .content .sub-title {
-  color: #000;
-  margin-top: 12px;
+.banner .content {
+  padding: 130px 0px 102px;
 }
-.banner .content .media {
-  margin-top: 43px;
+.banner .content .entry-title .title {
+  margin-bottom: 15px;
 }
-.banner .content .media img {
-  margin-left: auto;
-  margin-right: auto;
+.banner.home-banner .content {
+  padding: 215px 0;
 }
-.banner .content .scrollDown {
-  border: 0;
-  padding: 0;
-  width: 72px;
-  height: 72px;
-  color: #FFF;
-  font-size: 21px;
-  margin-top: 50px;
-  line-height: 72px;
-  background: #000;
-  text-align: center;
-  border-radius: 500px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.banner.home-banner .content .entry-title {
+  max-width: 583px;
 }
-.banner .content .scrollDown:hover, .banner .content .scrollDown:focus {
-  color: #FFF;
-  background: #000;
+.banner.home-banner .content .entry-title p {
+  max-width: 352px;
 }
-.banner .background {
-  top: -800px;
-  z-index: -1;
-  left: -600px;
-  margin-left: auto;
-  position: absolute;
-  margin-right: auto;
+.banner.home-banner .content .entry-title p + p {
+  margin-top: 10px;
 }
 
 /***********************************
@@ -1143,8 +885,8 @@ FOOTER STYLES
 }
 
 .footer {
-  padding: 90px 0 40px;
   background: #121212;
+  padding: 90px 0 40px;
 }
 .footer .widget .footer-brand {
   display: block;
@@ -1367,37 +1109,11 @@ FOOTER STYLES
 /***********************************
 MEDIA QUERIES
 ***********************************/
-@media only screen and (max-width: 1460px) {
-  /***********************************
-  HEADER STYLES
-  ***********************************/
-  .header .navbar .navbar-collapse .navbar-nav-right {
-    margin-left: 40px;
-  }
-
-  /***********************************
-  BREADCRUMB STYLES
-  ***********************************/
-  .breadcrumb {
-    padding: 25px 0 10px;
-  }
-}
 /* 1460 */
 @media only screen and (max-width: 1366px) {
   .container-fluid {
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-  /***********************************
-  HEADER STYLES
-  ***********************************/
-  .header .navbar .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .header .navbar .navbar-collapse .navbar-nav-right {
-    margin-left: 30px;
   }
 
   /***********************************
@@ -1430,8 +1146,14 @@ MEDIA QUERIES
     display: none;
   }
   .header .navbar .navbar-collapse .navbar-nav-right {
-    margin-right: 0;
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+
+  .banner .content {
+    padding: 125px 0 95px;
+  }
+  .banner .content .entry-title .title {
+    margin-bottom: 10px;
   }
 
   /***********************************
@@ -1479,18 +1201,15 @@ MEDIA QUERIES
   HEADER STYLES
   ***********************************/
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-child(3) {
     display: none;
-  }
-  .header .navbar .navbar-collapse .navbar-nav-right {
-    margin-left: 15px;
   }
 
   /***********************************
@@ -1548,17 +1267,6 @@ MEDIA QUERIES
   }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-child(4) {
     display: none;
-  }
-
-  .header_gutter {
-    height: 80px;
-  }
-
-  /***********************************
-  BREADCRUMB STYLES
-  ***********************************/
-  .breadcrumb {
-    padding-top: 20px;
   }
 
   /***********************************
@@ -1644,15 +1352,12 @@ MEDIA QUERIES
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) {
     display: none;
   }
-  .header .navbar .navbar-collapse .navbar-nav-right > li.social {
-    display: none;
-  }
 
-  /***********************************
-  BREADCRUMB STYLES
-  ***********************************/
-  .breadcrumb {
-    padding-top: 15px;
+  .banner .content {
+    padding: 115px 0 90px;
+  }
+  .banner .content .entry-title .title {
+    margin-bottom: 10px;
   }
 
   /***********************************
@@ -1695,53 +1400,6 @@ MEDIA QUERIES
 
   p {
     margin: 0 0 20px;
-  }
-
-  /***********************************
-  CONNECT STYLES
-  ***********************************/
-  .connect-page {
-    padding-top: 30px;
-  }
-
-  /***********************************
-  BLOG STYLES
-  ***********************************/
-  .blog-featured .blog-post {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-  .blog-featured .blog-post.big .text {
-    padding: 15px;
-  }
-  .blog-featured .blog-post.big .text .title {
-    font-size: 21px;
-    line-height: 30px;
-  }
-
-  .blog-post {
-    display: block !important;
-  }
-  .blog-post .media {
-    max-width: 100%;
-    margin-right: 0;
-    min-width: inherit;
-    margin-bottom: 15px;
-    float: none !important;
-  }
-  .blog-post .text .title {
-    font-size: 18px;
-    line-height: 26px;
-  }
-
-  /***********************************
-  FOOTER STYLES
-  ***********************************/
-  .footer .copyright-wrapper {
-    display: block !important;
-  }
-  .footer .social-media {
-    margin-top: 20px;
   }
 }
 /* 480 */

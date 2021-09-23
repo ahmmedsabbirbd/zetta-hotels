@@ -92,17 +92,6 @@
 	  	lastScroll = currentScroll;
 	});
 
-	/*** Header height = gutter height */
-	function setGutterHeight(){
-		var header = document.querySelector('.header'),
-			  gutter = document.querySelector('.header_gutter');
-		if (gutter) {
-			gutter.style.height = header.offsetHeight + 'px';
-		}
-	}
-	window.onload = setGutterHeight;
-	window.onresize = setGutterHeight;
-
 	/*** Navbar Menu */
     $('.navbar-toggle').sidr({
         name: 'sidr-main',
@@ -193,6 +182,21 @@
 	          elBackgrounPos = "0 " + (windowYOffset * _speed) + "px";
 	      
 	      el.style.top = elBackgrounPos;
+
+	    });
+	};
+
+	/** parallax js*/
+	var _parallax = $(".parallax"),
+      _speed = -0.2;
+
+	window.onscroll = function(){
+	    [].slice.call(_parallax).forEach(function(el,i){
+	      var rect = el.getBoundingClientRect();
+	      var windowYOffset = window.pageYOffset,
+	          elBackgrounPos = "0 " + (windowYOffset * _speed) + "px";
+	      
+	      el.style.backgroundPosition = elBackgrounPos;
 
 	    });
 	};

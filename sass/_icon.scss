@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'zetta-hotels';
-	src: url('fonts/zetta-hotels.eot?66511726');
-	src: url('fonts/zetta-hotels.eot?66511726#iefix') format('embedded-opentype'),
-	 	url('fonts/zetta-hotels.woff2?66511726') format('woff2'),
-		url('fonts/zetta-hotels.woff?66511726') format('woff'),
-	 	url('fonts/zetta-hotels.ttf?66511726') format('truetype'),
-	 	url('fonts/zetta-hotels.svg?66511726#zetta-hotels') format('svg');
+	src: url('fonts/zetta-hotels.eot?59108018');
+	src: url('fonts/zetta-hotels.eot?59108018#iefix') format('embedded-opentype'),
+	 	url('fonts/zetta-hotels.woff2?59108018') format('woff2'),
+		url('fonts/zetta-hotels.woff?59108018') format('woff'),
+	 	url('fonts/zetta-hotels.ttf?59108018') format('truetype'),
+	 	url('fonts/zetta-hotels.svg?59108018#zetta-hotels') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -48,3 +48,4 @@
 .icon-whatsapp:before { content: '\f232'; }
 .icon-snapchat:before { content: '\f2ac'; }
 .icon-facebook:before { content: '\f30c'; }
+.icon-carret:before { content: '\f107'; }
