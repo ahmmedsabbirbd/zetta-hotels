@@ -103,34 +103,19 @@ select, textarea {
 .btn {
 	border: 0;
 	outline: 0;
-	color: $white;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 20px;
+	color: $white;  
+	border-radius: 0;
 	box-shadow: none;
-	background: $black;
-	padding: 12px 22px;
-	border-radius: 500px;
+	background: $primary;
+	padding: 15px 42px;;
 	@include transition(all 0.3s ease);
 
-	&.white {
-		color: $black;
-		background: $white;
-	}
+	i {
+		margin-left: 5px;
 
-	&.primary {
-		color: $white;
-		background: $primary;
-
-		&:hover, &:focus {
-			color: $white;
-			background: $black;
+		&:before {
+			font-size: 15px;
 		}
-	}
-
-	&.black {
-		color: $white;
-		background: $black;
 	}
 
 	&:hover, &:focus, &:active {
@@ -166,8 +151,11 @@ select, textarea {
 		color: $black;
 	}
 
-	.dark_white {
-		color: $secondary;
+	&.dark-description {
+		
+		p {
+			color: $secondary;
+		}
 	}
 
 	&.white-entry-title {
@@ -688,6 +676,75 @@ HOME STYLES
 			}
 		}
 	} 
+}
+
+// rooms-page
+.rooms-page {
+	padding: 70px 0;
+
+	.minus {
+		margin-bottom: -16px;
+	}
+
+	.entry-title {
+		max-width: 375px;  
+		margin-bottom: 40px;
+	}
+}
+
+.trust-quality-item { 
+	overflow: hidden;
+	background: #F8F8F8;
+	margin-bottom: 16px;
+	height: calc(100% - 16px);
+
+	.media { 
+		max-width: 168px;
+		margin-right: 10px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.text { 
+		padding: 25px 0;
+		max-width: 262px;
+		margin-right: 16px;
+
+		.entry-title {
+			margin-bottom: 0; 
+
+			.title {
+				margin-bottom: 10px;
+			}
+
+			p {
+				+ p {
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+
+	.btn { 
+		color: $black;
+		padding: 0px 20px;
+
+		i {
+
+			&:before {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+.rooms-submit {
+	padding: 50px 0;
+	background: #F8F8F8;
 }
 
 /***********************************

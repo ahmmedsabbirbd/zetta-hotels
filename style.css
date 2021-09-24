@@ -300,32 +300,19 @@ select:focus, textarea:hover, textarea:focus {
   border: 0;
   outline: 0;
   color: #FFF;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #000;
-  padding: 12px 22px;
-  border-radius: 500px;
+  background: #5863F8;
+  padding: 15px 42px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.btn.white {
-  color: #000;
-  background: #FFF;
+.btn i {
+  margin-left: 5px;
 }
-.btn.primary {
-  color: #FFF;
-  background: #5863F8;
-}
-.btn.primary:hover, .btn.primary:focus {
-  color: #FFF;
-  background: #000;
-}
-.btn.black {
-  color: #FFF;
-  background: #000;
+.btn i:before {
+  font-size: 15px;
 }
 .btn:hover, .btn:focus, .btn:active {
   outline: 0;
@@ -353,7 +340,7 @@ select:focus, textarea:hover, textarea:focus {
   margin: 0;
   color: #000;
 }
-.entry-title .dark_white {
+.entry-title.dark-description p {
   color: #B1B1B1;
 }
 .entry-title.white-entry-title .title {
@@ -844,6 +831,60 @@ HOME STYLES
   margin-top: 10px;
 }
 
+.rooms-page {
+  padding: 70px 0;
+}
+.rooms-page .minus {
+  margin-bottom: -16px;
+}
+.rooms-page .entry-title {
+  max-width: 375px;
+  margin-bottom: 40px;
+}
+
+.trust-quality-item {
+  overflow: hidden;
+  background: #F8F8F8;
+  margin-bottom: 16px;
+  height: calc(100% - 16px);
+}
+.trust-quality-item .media {
+  max-width: 168px;
+  margin-right: 10px;
+}
+.trust-quality-item .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trust-quality-item .text {
+  padding: 25px 0;
+  max-width: 262px;
+  margin-right: 16px;
+}
+.trust-quality-item .text .entry-title {
+  margin-bottom: 0;
+}
+.trust-quality-item .text .entry-title .title {
+  margin-bottom: 10px;
+}
+.trust-quality-item .text .entry-title p + p {
+  margin-top: 5px;
+}
+.trust-quality-item .btn {
+  color: #000;
+  padding: 0px 20px;
+}
+.trust-quality-item .btn i:before {
+  font-size: 25px;
+}
+
+.rooms-submit {
+  padding: 50px 0;
+  background: #F8F8F8;
+}
+
 /***********************************
 FOOTER STYLES
 ***********************************/
@@ -1160,7 +1201,11 @@ MEDIA QUERIES
 @media only screen and (max-width: 1199px) {
   h1, .h1 {
     font-size: 55px;
-    line-height: 67px;
+    line-height: 66px;
+  }
+
+  .btn {
+    padding: 13px 30px;
   }
 
   .container-fluid {
@@ -1236,12 +1281,12 @@ MEDIA QUERIES
 @media only screen and (max-width: 991px) {
   h1, .h1 {
     font-size: 48px;
-    line-height: 60px;
+    line-height: 59px;
   }
 
   h2, .h2 {
     font-size: 40px;
-    line-height: 52px;
+    line-height: 54px;
   }
 
   /***********************************
@@ -1282,28 +1327,13 @@ MEDIA QUERIES
 /* 991 */
 @media only screen and (max-width: 767px) {
   h1, .h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 42px;
+    line-height: 53px;
   }
 
   h2, .h2 {
     font-size: 36px;
     line-height: 44px;
-  }
-
-  h3, .h3 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-
-  h4, .h4 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  h5, .h5 {
-    font-size: 20px;
-    line-height: 30px;
   }
 
   /***********************************
@@ -1350,11 +1380,6 @@ MEDIA QUERIES
 }
 /* 680 */
 @media only screen and (max-width: 575px) {
-  body, .body {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   h1, .h1 {
     font-size: 36px;
     line-height: 44px;
@@ -1365,24 +1390,8 @@ MEDIA QUERIES
     line-height: 36px;
   }
 
-  h3, .h3 {
-    font-size: 28px;
-    line-height: 34px;
-  }
-
-  h4, .h4 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  h5, .h5 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  h6, .h6 {
-    font-size: 16px;
-    line-height: 24px;
+  .btn {
+    padding: 12px 25px;
   }
 
   section {

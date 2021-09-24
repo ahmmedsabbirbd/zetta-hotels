@@ -171,7 +171,7 @@
 	  	infinite: true, 
 	  	slidesToShow: 4, 
 	  	// centerMode: true,
-	  	// centerPadding: '450px 0px 0px', 
+	  	// centerPadding: '0px 0px 0px', 
 	  	responsive: [
 		    {
 		      	breakpoint: 1367,
