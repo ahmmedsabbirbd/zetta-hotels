@@ -158,6 +158,42 @@
        	}
     });
 
+    /*** Gallery Slider */
+	var $galleryslick;
+
+	$galleryslick = $('.gallery-slider');
+
+	$galleryslick.slick({
+		autoplay: true,
+	  	speed: 300,
+	  	dots: false,
+	  	arrows: true,
+	  	infinite: true, 
+	  	slidesToShow: 4, 
+	  	// centerMode: true,
+	  	// centerPadding: '450px 0px 0px', 
+	  	responsive: [
+		    {
+		      	breakpoint: 1367,
+		      	settings: {
+		        	slidesToShow: 3 
+		      	}
+		    },
+		    {
+		      	breakpoint: 992,
+		      	settings: {
+		        	slidesToShow: 2
+		      	}
+		    },
+		    {
+		      	breakpoint: 768,
+		      	settings: {
+		        	slidesToShow: 1
+		      	}
+		    }
+	  	]
+	}); 
+
     /*** Read more js */
 	function readMore() {
 

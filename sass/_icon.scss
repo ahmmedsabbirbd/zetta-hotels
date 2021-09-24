@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'zetta-hotels';
-	src: url('fonts/zetta-hotels.eot?59108018');
-	src: url('fonts/zetta-hotels.eot?59108018#iefix') format('embedded-opentype'),
-	 	url('fonts/zetta-hotels.woff2?59108018') format('woff2'),
-		url('fonts/zetta-hotels.woff?59108018') format('woff'),
-	 	url('fonts/zetta-hotels.ttf?59108018') format('truetype'),
-	 	url('fonts/zetta-hotels.svg?59108018#zetta-hotels') format('svg');
+	src: url('fonts/zetta-hotels.eot?95615961');
+	src: url('fonts/zetta-hotels.eot?95615961#iefix') format('embedded-opentype'),
+	 	url('fonts/zetta-hotels.woff2?95615961') format('woff2'),
+		url('fonts/zetta-hotels.woff?95615961') format('woff'),
+	 	url('fonts/zetta-hotels.ttf?95615961') format('truetype'),
+	 	url('fonts/zetta-hotels.svg?95615961#zetta-hotels') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -34,18 +34,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:before { content: '\e800'; }
+.icon-right-small:before { content: '\e800'; }
 .icon-mail:before { content: '\e801'; }
+.icon-left-small:before { content: '\e802'; }
+.icon-down-small:before { content: '\e803'; }
 .icon-map-pin:before { content: '\e804'; }
 .icon-phone:before { content: '\e805'; }
-.icon-arrow-down:before { content: '\e807'; }
-.icon-arrow-left:before { content: '\e808'; }
-.icon-arrow-right:before { content: '\e809'; }
+.icon-up-small:before { content: '\e806'; }
 .icon-hotel:before { content: '\e80a'; }
 .icon-twitter:before { content: '\f099'; }
 .icon-gplus:before { content: '\f0d5'; }
+.icon-carret:before { content: '\f107'; }
 .icon-qq:before { content: '\f1d6'; }
 .icon-whatsapp:before { content: '\f232'; }
 .icon-snapchat:before { content: '\f2ac'; }
 .icon-facebook:before { content: '\f30c'; }
-.icon-carret:before { content: '\f107'; }

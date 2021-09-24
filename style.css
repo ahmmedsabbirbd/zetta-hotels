@@ -9,8 +9,8 @@ BASE STYLES
 ***********************************/
 @font-face {
   font-family: "zetta-hotels";
-  src: url("fonts/zetta-hotels.eot?59108018");
-  src: url("fonts/zetta-hotels.eot?59108018#iefix") format("embedded-opentype"), url("fonts/zetta-hotels.woff2?59108018") format("woff2"), url("fonts/zetta-hotels.woff?59108018") format("woff"), url("fonts/zetta-hotels.ttf?59108018") format("truetype"), url("fonts/zetta-hotels.svg?59108018#zetta-hotels") format("svg");
+  src: url("fonts/zetta-hotels.eot?95615961");
+  src: url("fonts/zetta-hotels.eot?95615961#iefix") format("embedded-opentype"), url("fonts/zetta-hotels.woff2?95615961") format("woff2"), url("fonts/zetta-hotels.woff?95615961") format("woff"), url("fonts/zetta-hotels.ttf?95615961") format("truetype"), url("fonts/zetta-hotels.svg?95615961#zetta-hotels") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -38,12 +38,20 @@ BASE STYLES
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:before {
+.icon-right-small:before {
   content: "";
 }
 
 .icon-mail:before {
   content: "";
+}
+
+.icon-left-small:before {
+  content: "";
+}
+
+.icon-down-small:before {
+  content: "";
 }
 
 .icon-map-pin:before {
@@ -54,16 +62,8 @@ BASE STYLES
   content: "";
 }
 
-.icon-arrow-down:before {
-  content: "";
-}
-
-.icon-arrow-left:before {
-  content: "";
-}
-
-.icon-arrow-right:before {
-  content: "";
+.icon-up-small:before {
+  content: "";
 }
 
 .icon-hotel:before {
@@ -76,6 +76,10 @@ BASE STYLES
 
 .icon-gplus:before {
   content: "";
+}
+
+.icon-carret:before {
+  content: "";
 }
 
 .icon-qq:before {
@@ -92,10 +96,6 @@ BASE STYLES
 
 .icon-facebook:before {
   content: "";
-}
-
-.icon-carret:before {
-  content: "";
 }
 
 *:not(ul):not(ol) {
@@ -807,11 +807,11 @@ BREADCRUMB STYLES
 /***********************************
 HOME STYLES
 ***********************************/
-.banner {
+.page-header {
   z-index: 1;
   position: relative;
 }
-.banner:before {
+.page-header:before {
   top: 0;
   left: 0;
   width: 100%;
@@ -822,66 +822,94 @@ HOME STYLES
   position: absolute;
   background: #000;
 }
-.banner .container {
+.page-header .container {
   position: relative;
 }
-.banner .content {
+.page-header .content {
   padding: 130px 0px 102px;
 }
-.banner .content .entry-title .title {
+.page-header .content .entry-title .title {
   margin-bottom: 15px;
 }
-.banner.home-banner .content {
+.page-header.page-banner .content {
   padding: 215px 0;
 }
-.banner.home-banner .content .entry-title {
+.page-header.page-banner .content .entry-title {
   max-width: 583px;
 }
-.banner.home-banner .content .entry-title p {
+.page-header.page-banner .content .entry-title p {
   max-width: 352px;
 }
-.banner.home-banner .content .entry-title p + p {
+.page-header.page-banner .content .entry-title p + p {
   margin-top: 10px;
 }
 
 /***********************************
 FOOTER STYLES
 ***********************************/
-.call-action {
-  padding: 62px 0;
-  position: relative;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+.latest-gallery {
+  padding-top: 90px;
 }
-.call-action:before {
-  top: 0;
-  left: 0;
-  content: "";
+.latest-gallery .entry-title {
+  max-width: 569px;
+  margin-bottom: 50px;
+}
+
+.gallery-slider .slick-arrow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: #5863F8;
+}
+.gallery-slider .slick-arrow:before {
+  color: #000;
+  font-family: "zetta-hotels";
+}
+.gallery-slider .slick-arrow.slick-prev {
+  left: 68px;
+}
+.gallery-slider .slick-arrow.slick-prev:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-7px, -9px);
+  transform: translate(-7px, -9px);
+}
+.gallery-slider .slick-arrow.slick-prev:hover:before {
+  -webkit-transform: translate(-15px, -9px);
+  transform: translate(-15px, -9px);
+}
+.gallery-slider .slick-arrow.slick-next {
+  right: 68px;
+}
+.gallery-slider .slick-arrow.slick-next:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-7px, -8px);
+  transform: translate(-7px, -8px);
+}
+.gallery-slider .slick-arrow.slick-next:hover:before {
+  -webkit-transform: translate(1px, -8px);
+  transform: translate(1px, -8px);
+}
+.gallery-slider .gallery-item {
+  width: 352px;
+  display: block;
+  height: 352px;
+  overflow: hidden;
+}
+.gallery-slider .gallery-item .media {
   width: 100%;
   height: 100%;
-  position: absolute;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-.call-action .content .sub-title {
-  color: #FFF;
-  display: block;
-  margin-bottom: 5px;
-}
-.call-action .content .title {
-  color: #DAD9E5;
-  margin-bottom: 5px;
-}
-.call-action .content p {
-  margin: 0;
-  color: #FFF;
-}
-.call-action .content p + p {
-  margin-top: 20px;
-}
-.call-action .content .btn {
-  margin-top: 20px;
+.gallery-slider .gallery-item .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer {
@@ -1109,6 +1137,11 @@ FOOTER STYLES
 /***********************************
 MEDIA QUERIES
 ***********************************/
+@media only screen and (max-width: 1460px) {
+  .latest-gallery {
+    padding-top: 70px;
+  }
+}
 /* 1460 */
 @media only screen and (max-width: 1366px) {
   .container-fluid {
@@ -1149,18 +1182,32 @@ MEDIA QUERIES
     margin-left: 10px;
   }
 
-  .banner .content {
+  .page-header .content {
     padding: 125px 0 95px;
   }
-  .banner .content .entry-title .title {
+  .page-header .content .entry-title .title {
     margin-bottom: 10px;
   }
 
   /***********************************
   FOOTER STYLES
   ***********************************/
-  .call-action {
-    padding: 50px 0;
+  .latest-gallery {
+    padding-top: 50px;
+  }
+  .latest-gallery .entry-title {
+    margin-bottom: 40px;
+  }
+
+  .gallery-slider .slick-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .gallery-slider .slick-arrow.slick-prev {
+    left: 20px;
+  }
+  .gallery-slider .slick-arrow.slick-next {
+    right: 20px;
   }
 
   .footer {
@@ -1353,16 +1400,33 @@ MEDIA QUERIES
     display: none;
   }
 
-  .banner .content {
+  .page-header .content {
     padding: 115px 0 90px;
   }
-  .banner .content .entry-title .title {
+  .page-header .content .entry-title .title {
     margin-bottom: 10px;
   }
 
   /***********************************
   FOOTER STYLES
   ***********************************/
+  .latest-gallery .entry-title {
+    margin-bottom: 30px;
+  }
+
+  .gallery-slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .gallery-slider .slick-arrow.slick-prev:hover:before {
+    -webkit-transform: translate(-12px, -9px);
+    transform: translate(-12px, -9px);
+  }
+  .gallery-slider .slick-arrow.slick-next:hover:before {
+    -webkit-transform: translate(-2px, -9px);
+    transform: translate(-2px, -9px);
+  }
+
   .footer .widget .footer-menu > li {
     margin-bottom: 8px;
   }

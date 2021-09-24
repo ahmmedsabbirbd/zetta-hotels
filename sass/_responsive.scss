@@ -3,6 +3,10 @@ MEDIA QUERIES
 ***********************************/
 @media only screen and (max-width: 1460px) {
 
+    .latest-gallery {
+        padding-top: 70px; 
+    }
+
     
 }/* 1460 */
 
@@ -65,7 +69,7 @@ MEDIA QUERIES
         }
     }
 
-    .banner {
+    .page-header {
 
         .content {
             padding: 125px 0 95px;
@@ -82,8 +86,28 @@ MEDIA QUERIES
     /***********************************
     FOOTER STYLES
     ***********************************/
-    .call-action {
-        padding: 50px 0;
+    .latest-gallery {
+        padding-top: 50px; 
+
+        .entry-title {
+            margin-bottom: 40px;
+        }
+    }
+
+    .gallery-slider {
+
+        .slick-arrow { 
+            width: 50px;
+            height: 50px;
+
+            &.slick-prev {
+                left: 20px;
+            } 
+
+            &.slick-next {
+                right: 20px;
+            } 
+        }
     }
 
     .footer {
@@ -318,7 +342,7 @@ MEDIA QUERIES
         }
     } 
 
-    .banner {
+    .page-header {
 
         .content {
             padding: 115px 0 90px;
@@ -334,6 +358,41 @@ MEDIA QUERIES
     /***********************************
     FOOTER STYLES
     ***********************************/
+    .latest-gallery { 
+
+        .entry-title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .gallery-slider {
+
+        .slick-arrow { 
+            width: 40px;
+            height: 40px;
+
+            &.slick-prev {  
+
+                &:hover {
+
+                    &:before {
+                        @include transform(translate(-12px, -9px));
+                    }
+                }
+            }
+
+            &.slick-next { 
+
+                &:hover {
+
+                    &:before {
+                        @include transform(translate(-2px, -9px));
+                    }
+                }
+            }
+        }
+    }
+
     .footer {
 
         .widget {
