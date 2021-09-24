@@ -678,8 +678,8 @@ HOME STYLES
 	} 
 }
 
-// rooms-page
-.rooms-page {
+// rooms page
+.trust-quality {
 	padding: 70px 0;
 
 	.minus {
@@ -692,11 +692,18 @@ HOME STYLES
 	}
 }
 
-.trust-quality-item { 
+.trust-quality-item, .explore-menu-item { 
 	overflow: hidden;
 	background: #F8F8F8;
 	margin-bottom: 16px;
 	height: calc(100% - 16px);
+
+	&.explore-menu-item {
+
+		.btn {
+			padding: 16px 20px;
+		}
+	}
 
 	.media { 
 		max-width: 168px;
@@ -745,6 +752,20 @@ HOME STYLES
 .rooms-submit {
 	padding: 50px 0;
 	background: #F8F8F8;
+}
+
+// restaurant page
+.explore-menu {
+	padding: 70px 0;
+
+	.minus {
+		margin-bottom: -16px;
+	}
+
+	.entry-title {
+		max-width: 500px;  
+		margin-bottom: 40px;
+	}
 }
 
 /***********************************

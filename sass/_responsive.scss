@@ -7,6 +7,10 @@ MEDIA QUERIES
         padding-top: 70px; 
     }
 
+    .trust-quality, .explore-menu {
+        padding: 60px 0;
+    }
+
     
 }/* 1460 */
 
@@ -174,6 +178,30 @@ MEDIA QUERIES
                         }
                     }
                 }
+            }
+        }
+    }
+
+    // rooms page
+    .trust-quality, .explore-menu {
+        padding: 50px 0;
+
+        .entry-title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .trust-quality-item, .explore-menu-item {
+        justify-content: space-between;
+
+        .text {
+            max-width: 100%;
+        }
+
+        &.explore-menu-item {
+
+            .btn {
+                padding: 12px 16px;
             }
         }
     }
@@ -353,6 +381,31 @@ MEDIA QUERIES
                 }
             }
         }
+    }
+
+    // rooms page
+    .trust-quality, .explore-menu {
+        padding: 30px 0;
+
+        .entry-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .trust-quality-item, .explore-menu-item { 
+        flex-direction: column;
+
+        .media {
+            max-width: 100%;
+        } 
+
+        .text {
+            padding: 20px 0;
+        }
+    }
+
+    .rooms-submit {
+        padding: 30px 0;
     }
     /***********************************
     FOOTER STYLES
