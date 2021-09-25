@@ -14,6 +14,15 @@ MEDIA QUERIES
     // restaurant page
     .visit-restaurant {
         padding-top: 70px;
+
+        &.about {
+            padding-bottom: 70px;
+        }
+    }
+
+    // about page
+    .bring-details {
+        padding: 75px 0;
     }
 
     
@@ -99,6 +108,15 @@ MEDIA QUERIES
     // restaurant page
     .visit-restaurant {
 
+        &.about {
+
+            .entry-title {
+                margin-top: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
         .media {
             max-width: 530px;
             margin-left: auto;
@@ -109,6 +127,17 @@ MEDIA QUERIES
             margin-left: 0;
             max-width: 100%;
             margin-top: 20px;
+        }
+    }
+
+    // about page 
+    .trust-customers {
+
+        .media {
+
+            img {
+                max-height: 500px;
+            }
         }
     }
 
@@ -230,6 +259,29 @@ MEDIA QUERIES
     // restaurant page
     .visit-restaurant {
         padding-top: 50px;
+
+        &.about {
+            padding-bottom: 50px;
+        }
+    }
+
+    // about page
+    .bring-details {
+        padding: 60px 0;
+
+        .trust-customers-container {
+
+            .entry-title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .trust-customers {
+
+        .entry-title {
+            margin-bottom: 20px;
+        }
     }
 
     /***********************************
@@ -290,6 +342,47 @@ MEDIA QUERIES
             }
         }
     } 
+
+    // about page 
+    .bring-details {
+        padding: 40px 0;
+    }
+
+    .trust-customers {
+
+        &:after {
+            position: inherit;
+        }
+
+        .trust-customers-container {
+            z-index: 1;
+            position: relative;
+
+            &:after {
+                top: 0;
+                height: 100%;
+                left: -300vw;
+                z-index: -1;
+                width: 600vw;
+                content: "";
+                background: #F8F8F8;
+                position: absolute;
+            }
+
+            .content {
+                max-width: 100%;
+            }
+        }
+
+        .media {
+            width: 100%;
+        }
+    }
+
+    .testimonial_slider_control {
+        top: 0;
+        left: 8px; 
+    }
 
     /***********************************
     FOOTER STYLES
@@ -438,10 +531,32 @@ MEDIA QUERIES
     .visit-restaurant {
         padding-top: 30px;
 
-        .media {
-            max-width: 100%;
+        &.about {
+            padding-bottom: 30px;
+
+            .media {
+
+                .image {
+                    max-height: 200px;
+                }
+            }
         }
+
+        .media {
+            height: 366px;
+            max-width: 100%;
+
+            .image {
+                max-width: 200px;
+            }
+        }
+    } 
+
+    // about page
+    .bring-details {
+        padding: 30px 0;
     }
+
     /***********************************
     FOOTER STYLES
     ***********************************/
@@ -533,17 +648,51 @@ MEDIA QUERIES
     h1, .h1 { font-size: 34px; line-height: 40px; }
 
     // restaurant page
-    .visit-restaurant {
+    .visit-restaurant { 
+
+        &.about { 
+
+            .media {
+
+                .image {
+                    max-height: 148px;
+                }
+            }
+        }
 
         .media {
-            
+            height: 280px; 
+
             .image {
-                width: 420px;
-                display: block;
-                max-width: 100%; 
-                position: inherit;
+                max-width: 150px;
             }
-        } 
-    }
+        }
+    } 
 
 }/* 480 */
+
+@media only screen and (max-width: 380px) { 
+
+    // restaurant page
+    .visit-restaurant { 
+
+        &.about { 
+
+            .media {
+
+                .image {
+                    max-height: 130px;
+                }
+            }
+        }
+
+        .media {
+            height: 248px; 
+
+            .image {
+                max-width: 130px;
+            }
+        }
+    } 
+
+}/* 380 */

@@ -891,6 +891,16 @@ HOME STYLES
 .visit-restaurant {
   padding-top: 80px;
 }
+.visit-restaurant.about {
+  padding-bottom: 80px;
+}
+.visit-restaurant.about .media .image:last-child {
+  max-width: 520px;
+}
+.visit-restaurant.about .entry-title {
+  margin-left: 0;
+  margin-right: 90px;
+}
 .visit-restaurant .media {
   height: 460px;
   position: relative;
@@ -947,6 +957,267 @@ HOME STYLES
 .explore-menu .entry-title {
   max-width: 500px;
   margin-bottom: 40px;
+}
+
+.bring-details {
+  z-index: 1;
+  padding: 90px 0;
+  position: relative;
+}
+.bring-details:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  opacity: 0.4;
+  background: #000;
+  position: absolute;
+}
+.bring-details .entry-title {
+  max-width: 375px;
+  margin-bottom: 30px;
+}
+.bring-details .entry-title .title {
+  color: #FFF;
+}
+
+.bring-slider .slick-arrow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: #FFF;
+}
+.bring-slider .slick-arrow:before {
+  color: #5863F8;
+  font-family: "zetta-hotels";
+}
+.bring-slider .slick-arrow.slick-prev {
+  left: -75px;
+}
+.bring-slider .slick-arrow.slick-prev:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-7px, -9px);
+  transform: translate(-7px, -9px);
+}
+.bring-slider .slick-arrow.slick-prev:hover:before {
+  -webkit-transform: translate(-15px, -9px);
+  transform: translate(-15px, -9px);
+}
+.bring-slider .slick-arrow.slick-next {
+  right: -75px;
+}
+.bring-slider .slick-arrow.slick-next:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-7px, -8px);
+  transform: translate(-7px, -8px);
+}
+.bring-slider .slick-arrow.slick-next:hover:before {
+  -webkit-transform: translate(1px, -8px);
+  transform: translate(1px, -8px);
+}
+.bring-slider .bring-item {
+  height: 100%;
+  display: block;
+  background: #FFF;
+  padding: 25px 16px;
+}
+.bring-slider .bring-item .icon {
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  background: #5863F8;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bring-slider .bring-item .icon i {
+  color: #000;
+  font-size: 32px;
+}
+.bring-slider .bring-item .text .title {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.bring-slider .bring-item .text p {
+  color: #B1B1B1;
+  font-weight: 500px;
+}
+.bring-slider .bring-item .text p + p {
+  margin-top: 10px;
+}
+
+.trust-customers {
+  overflow: hidden;
+  position: relative;
+}
+.trust-customers:after {
+  top: 0;
+  left: -9942%;
+  z-index: -1;
+  height: 100%;
+  width: 9999%;
+  content: "";
+  position: absolute;
+  background: #F8F8F8;
+}
+.trust-customers .trust-customers-container {
+  padding: 30px 0;
+  background: #F8F8F8;
+}
+.trust-customers .trust-customers-container .entry-title {
+  margin-bottom: 30px;
+}
+.trust-customers .media {
+  width: 60vw;
+}
+.trust-customers .media img {
+  width: 100%;
+  height: 100%;
+  max-height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonials-slider {
+  background: #F8F8F8;
+}
+.testimonials-slider .slick-dots {
+  margin-top: 20px;
+  text-align: left;
+}
+.testimonials-slider .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background: #B1B1B1;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.testimonials-slider .slick-dots li.slick-active {
+  background: #5863F8;
+}
+.testimonials-slider .testimonial-item .content {
+  max-width: 350px;
+}
+.testimonials-slider .testimonial-item .content .meta {
+  margin-bottom: 20px;
+}
+.testimonials-slider .testimonial-item .content .meta .media {
+  width: 57px;
+  height: 57px;
+  overflow: hidden;
+  position: inherit;
+  margin-right: 15px;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+}
+.testimonials-slider .testimonial-item .content .meta .media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials-slider .testimonial-item .content .meta .meta-details .name {
+  font-weight: 600;
+}
+.testimonials-slider .testimonial-item .content .meta .meta-details .position {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #B1B1B1;
+}
+.testimonials-slider .testimonial-item .content p {
+  color: #000;
+  font-weight: 500;
+}
+.testimonials-slider .testimonial-item .content p + p {
+  margin-top: 10px;
+}
+
+.testimonial_slider_control {
+  left: -52px;
+  z-index: 1;
+  bottom: 0;
+  margin-right: -76px;
+  position: absolute;
+}
+.testimonial_slider_control .slick-arrow {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background: #FFF;
+}
+.testimonial_slider_control .slick-arrow:before {
+  color: #000;
+  font-family: "zetta-hotels";
+}
+.testimonial_slider_control .slick-arrow.prev {
+  background: #5863F8;
+}
+.testimonial_slider_control .slick-arrow.prev:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-7px, -9px);
+  transform: translate(-7px, -9px);
+}
+.testimonial_slider_control .slick-arrow.prev:hover:before {
+  -webkit-transform: translate(-15px, -9px);
+  transform: translate(-15px, -9px);
+}
+.testimonial_slider_control .slick-arrow.next {
+  margin-left: -4px;
+}
+.testimonial_slider_control .slick-arrow.next:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate(-7px, -8px);
+  transform: translate(-7px, -8px);
+}
+.testimonial_slider_control .slick-arrow.next:hover:before {
+  -webkit-transform: translate(1px, -8px);
+  transform: translate(1px, -8px);
+}
+
+.contact-map {
+  padding: 50px 0;
+}
+.contact-map #map {
+  width: 100%;
+  height: 285px;
 }
 
 /***********************************
@@ -1254,6 +1525,13 @@ MEDIA QUERIES
   .visit-restaurant {
     padding-top: 70px;
   }
+  .visit-restaurant.about {
+    padding-bottom: 70px;
+  }
+
+  .bring-details {
+    padding: 75px 0;
+  }
 }
 /* 1460 */
 @media only screen and (max-width: 1366px) {
@@ -1306,6 +1584,11 @@ MEDIA QUERIES
     margin-bottom: 10px;
   }
 
+  .visit-restaurant.about .entry-title {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
   .visit-restaurant .media {
     max-width: 530px;
     margin-left: auto;
@@ -1315,6 +1598,10 @@ MEDIA QUERIES
     margin-left: 0;
     max-width: 100%;
     margin-top: 20px;
+  }
+
+  .trust-customers .media img {
+    max-height: 500px;
   }
 
   /***********************************
@@ -1409,6 +1696,20 @@ MEDIA QUERIES
   .visit-restaurant {
     padding-top: 50px;
   }
+  .visit-restaurant.about {
+    padding-bottom: 50px;
+  }
+
+  .bring-details {
+    padding: 60px 0;
+  }
+  .bring-details .trust-customers-container .entry-title {
+    margin-bottom: 20px;
+  }
+
+  .trust-customers .entry-title {
+    margin-bottom: 20px;
+  }
 
   /***********************************
   FOOTER STYLES
@@ -1450,6 +1751,39 @@ MEDIA QUERIES
   }
   .header .navbar .navbar-collapse .navbar-nav:not(.navbar-nav-right) > li:nth-child(4) {
     display: none;
+  }
+
+  .bring-details {
+    padding: 40px 0;
+  }
+
+  .trust-customers:after {
+    position: inherit;
+  }
+  .trust-customers .trust-customers-container {
+    z-index: 1;
+    position: relative;
+  }
+  .trust-customers .trust-customers-container:after {
+    top: 0;
+    height: 100%;
+    left: -300vw;
+    z-index: -1;
+    width: 600vw;
+    content: "";
+    background: #F8F8F8;
+    position: absolute;
+  }
+  .trust-customers .trust-customers-container .content {
+    max-width: 100%;
+  }
+  .trust-customers .media {
+    width: 100%;
+  }
+
+  .testimonial_slider_control {
+    top: 0;
+    left: 8px;
   }
 
   /***********************************
@@ -1549,8 +1883,22 @@ MEDIA QUERIES
   .visit-restaurant {
     padding-top: 30px;
   }
+  .visit-restaurant.about {
+    padding-bottom: 30px;
+  }
+  .visit-restaurant.about .media .image {
+    max-height: 200px;
+  }
   .visit-restaurant .media {
+    height: 366px;
     max-width: 100%;
+  }
+  .visit-restaurant .media .image {
+    max-width: 200px;
+  }
+
+  .bring-details {
+    padding: 30px 0;
   }
 
   /***********************************
@@ -1608,11 +1956,26 @@ MEDIA QUERIES
     line-height: 40px;
   }
 
+  .visit-restaurant.about .media .image {
+    max-height: 148px;
+  }
+  .visit-restaurant .media {
+    height: 280px;
+  }
   .visit-restaurant .media .image {
-    width: 420px;
-    display: block;
-    max-width: 100%;
-    position: inherit;
+    max-width: 150px;
   }
 }
 /* 480 */
+@media only screen and (max-width: 380px) {
+  .visit-restaurant.about .media .image {
+    max-height: 130px;
+  }
+  .visit-restaurant .media {
+    height: 248px;
+  }
+  .visit-restaurant .media .image {
+    max-width: 130px;
+  }
+}
+/* 380 */

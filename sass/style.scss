@@ -758,6 +758,25 @@ HOME STYLES
 .visit-restaurant {
 	padding-top: 80px;
 
+	&.about {
+		padding-bottom: 80px;
+
+		.media {
+
+			.image {
+
+				&:last-child {
+					max-width: 520px;
+				}
+			}
+		}
+
+		.entry-title {
+			margin-left: 0;
+			margin-right: 90px;
+		}
+	}
+
 	.media {
 		height: 460px;
 		position: relative;
@@ -824,6 +843,311 @@ HOME STYLES
 	.entry-title {
 		max-width: 500px;  
 		margin-bottom: 40px;
+	}
+}
+
+// about us
+.bring-details {
+	z-index: 1;
+	padding: 90px 0;
+	position: relative;
+
+	&:before {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		z-index: -1;
+		opacity: 0.4;
+		background: #000;
+		position: absolute;
+	}
+
+	.entry-title {
+		max-width: 375px;
+		margin-bottom: 30px;
+
+		.title {
+			color: $white;
+		}
+	}
+}
+
+.bring-slider {
+
+	.slick-arrow { 
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background: $white;
+
+		&:before {
+			color: $primary;
+			font-family: "zetta-hotels";
+		}
+
+		&.slick-prev {
+			left: -75px;
+
+			&:before {
+				content: "\e802";
+				position: absolute;
+				@include transition(all .3s ease);
+				@include transform (translate(-7px, -9px));
+			}
+
+			&:hover {
+
+				&:before {
+					@include transform(translate(-15px, -9px));
+				}
+			}
+		}
+
+		&.slick-next {
+			right: -75px;
+
+			&:before {
+				content: "\e800";
+				position: absolute;
+				@include transition(all .3s ease);
+				@include transform (translate(-7px, -8px));
+			}
+
+			&:hover {
+
+				&:before {
+					@include transform(translate(1px, -8px));
+				}
+			}
+		}
+	}
+
+	.bring-item {
+		height: 100%;
+		display: block;
+		background: $white;
+		padding: 25px 16px;
+
+		.icon {
+			width: 58px;
+			height: 58px;
+			overflow: hidden;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 15px;
+			background: $primary;
+			@include border-radius(500px);
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			i {
+				color: $black;
+				font-size: 32px;
+			}
+		}
+
+		.text {
+
+			.title {
+				color: $black;
+				font-weight: 600;
+				margin-bottom: 20px;
+			}
+
+			p {
+				color: $secondary;
+				font-weight: 500px;
+
+				+ p {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+
+.trust-customers {
+	overflow: hidden;
+	position: relative; 
+
+	&:after {
+		top: 0;
+		left: -9942%;
+		z-index: -1;
+		height: 100%;
+		width: 9999%;
+		content: "";
+		position: absolute;
+		background: #F8F8F8;
+	}
+
+	.trust-customers-container {
+		padding: 30px 0;
+		background: #F8F8F8;
+ 
+		.entry-title {
+			margin-bottom: 30px;
+		} 
+
+	}
+	
+	.media {
+		width: 60vw;
+
+		img {
+			width: 100%;
+			height: 100%;
+			max-height: 580px;
+			object-fit: cover;
+		}
+	}
+}
+
+.testimonials-slider {
+	background: #F8F8F8;
+
+	.slick-dots {
+		margin-top: 20px;
+		text-align: left;
+
+		li {
+			width: 10px;
+			height: 10px;
+			background: $secondary;
+			@include border-radius(500px);
+			@include transition(all .3s ease);
+
+			&.slick-active {
+				background: $primary;
+			}
+		}
+	}
+
+	.testimonial-item {
+		
+		.content {
+			max-width: 350px;
+
+			.meta {
+				margin-bottom: 20px;
+
+				.media {
+					width: 57px;
+					height: 57px;
+					overflow: hidden;
+					position: inherit;
+					margin-right: 15px;
+					@include border-radius(500px);
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+
+				.meta-details {
+
+					.name {
+						font-weight: 600;
+					}
+
+					.position {
+						font-size: 12px;
+						font-weight: 600;
+						line-height: 18px;
+						color: $secondary;
+					}
+				}
+			}
+
+			p {
+				color: $black;
+				font-weight: 500;
+
+				+ p {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+
+.testimonial_slider_control {
+	left: -52px;
+	z-index: 1;
+	bottom: 0;
+	margin-right: -76px; 
+	position: absolute;
+
+	.slick-arrow {  
+		width: 60px;
+		height: 60px; 
+		padding: 0;
+		background: $white;
+
+		&:before {
+			color: $black;
+			font-family: "zetta-hotels";
+		}
+
+		&.prev { 
+			background: $primary;
+
+			&:before {
+				content: "\e802";
+				position: absolute;
+				@include transition(all .3s ease);
+				@include transform (translate(-7px, -9px));
+			}
+
+			&:hover {
+
+				&:before {
+					@include transform(translate(-15px, -9px));
+				}
+			}
+		}
+
+		&.next { 
+			margin-left: -4px;
+
+			&:before {
+				content: "\e800";
+				position: absolute;
+				@include transition(all .3s ease);
+				@include transform (translate(-7px, -8px));
+			}
+
+			&:hover {
+
+				&:before {
+					@include transform(translate(1px, -8px));
+				}
+			}
+		}
+	}
+}
+
+// contact page
+.contact-map {
+	padding: 50px 0;
+
+	#map {
+		width: 100%;
+		height: 285px;
+
+		// .gmnoprint {
+		// 	display: none;
+		// }
+
+		// button[aria-label="Toggle fullscreen view"] {
+		// 	display: none;
+		// }  
 	}
 }
 

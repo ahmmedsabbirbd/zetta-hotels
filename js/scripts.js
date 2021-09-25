@@ -158,6 +158,57 @@
        	}
     });
 
+    /*** Testimonials Slider */
+	var $testimonialsslick;
+
+	$testimonialsslick = $('.testimonials-slider');
+
+	$testimonialsslick.slick({
+		autoplay: true,
+	  	speed: 250,
+	  	dots: true,
+	  	arrows: true,
+	  	infinite: true, 
+	  	slidesToShow: 1, 
+	  	prevArrow: $('.testimonial_slider_control .prev'),
+	  	nextArrow: $('.testimonial_slider_control .next'),
+	}); 
+
+    /*** Bring Slider */
+	var $bringslick;
+
+	$bringslick = $('.bring-slider');
+
+	$bringslick.slick({
+		autoplay: true,
+	  	speed: 300,
+	  	dots: false,
+	  	arrows: true,
+	  	infinite: true, 
+	  	slidesToShow: 4, 
+	  	adaptiveHeight: true,  
+	  	responsive: [
+		    {
+		      	breakpoint: 1367,
+		      	settings: {
+		        	slidesToShow: 3 
+		      	}
+		    },
+		    {
+		      	breakpoint: 992,
+		      	settings: {
+		        	slidesToShow: 2
+		      	}
+		    },
+		    {
+		      	breakpoint: 768,
+		      	settings: {
+		        	slidesToShow: 1
+		      	}
+		    }
+	  	]
+	}); 
+
     /*** Gallery Slider */
 	var $galleryslick;
 
@@ -165,7 +216,7 @@
 
 	$galleryslick.slick({
 		autoplay: true,
-	  	speed: 300,
+	  	speed: 200,
 	  	dots: false,
 	  	arrows: true,
 	  	infinite: true, 
@@ -270,5 +321,117 @@
 	
 	    }, 'xml');
 	});
+
+	/*** Google map */
+
     
 }(jQuery));
+
+var mapId = document.getElementById("map");
+
+if (mapId) {
+
+	function initMap() {
+		var location = { lat: 24.249972, lng: 89.022778 };
+
+		var mapOptions = { 
+	        zoom: 18,
+	        center: location,
+	        
+			// gestureHandling: "none",
+  			zoomControl: false,
+
+	        // disableDefaultUI: true,
+	        // draggable: true,
+	        // scrollwheel: false,
+	        styles: [
+	        {elementType: 'geometry', stylers: [{color: '#F6F6F6'}]},
+	        {elementType: 'labels.text.stroke', stylers: [{color: '#F6F6F6'}]},
+	        {elementType: 'labels.text.fill', stylers: [{color: '#B3B3B3'}]},
+	        {
+	          featureType: 'administrative.locality',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#404040'}]
+	        },
+	        {
+	          featureType: 'poi',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#404040'}]
+	        },
+	        {
+	          featureType: 'poi.park',
+	          elementType: 'geometry',
+	          stylers: [{color: '#FFFFFF'}]
+	        },
+	        {
+	          featureType: 'poi.park',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#FFFFFF'}]
+	        },
+	        {
+	          featureType: 'road',
+	          elementType: 'geometry',
+	          stylers: [{color: '#FFFFFF'}]
+	        },
+	        {
+	          featureType: 'road',
+	          elementType: 'geometry.stroke',
+	          stylers: [{color: '#FFFFFF'}]
+	        },
+	        {
+	          featureType: 'road',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#606060'}]
+	        },
+	        {
+	          featureType: 'road.highway',
+	          elementType: 'geometry',
+	          stylers: [{color: '#B3B3B3'}]
+	        },
+	        {
+	          featureType: 'road.highway',
+	          elementType: 'geometry.stroke',
+	          stylers: [{color: '#FFFFFF'}]
+	        },
+	        {
+	          featureType: 'road.highway',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#CECECE'}]
+	        },
+	        {
+	          featureType: 'transit',
+	          elementType: 'geometry',
+	          stylers: [{color: '#FFFFFF'}]
+	        },
+	        {
+	          featureType: 'transit.station',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#404040'}]
+	        },
+	        {
+	          featureType: 'water',
+	          elementType: 'geometry',
+	          stylers: [{color: '#A0A09A'}]
+	        },
+	        {
+	          featureType: 'water',
+	          elementType: 'labels.text.fill',
+	          stylers: [{color: '#5F5F5F'}]
+	        },
+	        {
+	          featureType: 'water',
+	          elementType: 'labels.text.stroke',
+	          stylers: [{color: '#A0A09A'}]
+	        }
+	      ]
+	    }; 
+
+
+		var map = new google.maps.Map(mapId, mapOptions) ;
+
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+	}
+}
