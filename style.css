@@ -476,11 +476,6 @@ select:focus, textarea:hover, textarea:focus {
 /***********************************
 HEADER STYLES
 ***********************************/
-.scroll-down .header {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-}
-
 .header {
   top: 0;
   left: 0;
@@ -605,6 +600,13 @@ HEADER STYLES
 }
 .header .navbar .navbar-collapse .navbar-nav > li.active > a, .header .navbar .navbar-collapse .navbar-nav > li:hover > a, .header .navbar .navbar-collapse .navbar-nav > li:focus > a {
   color: #5863F8;
+}
+
+.scroll-down .header {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
 }
 
 .sidr {
@@ -1219,6 +1221,64 @@ HOME STYLES
   width: 100%;
   height: 285px;
 }
+.contact-map #map .gmnoprint {
+  display: none;
+}
+
+.contact-support .entry-title {
+  max-width: 375px;
+  margin-bottom: 40px;
+}
+.contact-support .entry-title .sub-title {
+  text-transform: uppercase;
+}
+
+.quick-contact-support {
+  padding-top: 40px;
+}
+.quick-contact-support .minus {
+  margin-bottom: -16px;
+}
+.quick-contact-support .contact-support-item {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+.quick-contact-support .contact-support-item .icon {
+  width: 58px;
+  height: 58px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background: #5863F8;
+  border-radius: 500px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.quick-contact-support .contact-support-item .icon i {
+  color: #FFF;
+  font-size: 16px;
+}
+.quick-contact-support .contact-support-item .text .title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.quick-contact-support .contact-support-item .text a {
+  font-weight: 500;
+  color: #B1B1B1;
+}
 
 /***********************************
 FOOTER STYLES
@@ -1604,6 +1664,14 @@ MEDIA QUERIES
     max-height: 500px;
   }
 
+  .contact-map {
+    padding: 40px 0;
+  }
+
+  .contact-support .entry-title {
+    margin-bottom: 25px;
+  }
+
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -1786,6 +1854,11 @@ MEDIA QUERIES
     left: 8px;
   }
 
+  .contact-support .entry-title {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
   /***********************************
   FOOTER STYLES
   ***********************************/
@@ -1899,6 +1972,14 @@ MEDIA QUERIES
 
   .bring-details {
     padding: 30px 0;
+  }
+
+  .contact-map {
+    padding: 30px 0;
+  }
+
+  .quick-contact-support {
+    padding-top: 30px;
   }
 
   /***********************************

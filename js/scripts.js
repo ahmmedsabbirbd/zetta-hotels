@@ -335,33 +335,29 @@ if (mapId) {
 		var location = { lat: 24.249972, lng: 89.022778 };
 
 		var mapOptions = { 
-	        zoom: 18,
+	        zoom: 15,
 	        center: location,
-	        
-			// gestureHandling: "none",
-  			zoomControl: false,
+	        scrollwheel: true,
+	        disableDefaultUI: true,
 
-	        // disableDefaultUI: true,
-	        // draggable: true,
-	        // scrollwheel: false,
-	        styles: [
+	        styles: [ 
 	        {elementType: 'geometry', stylers: [{color: '#F6F6F6'}]},
 	        {elementType: 'labels.text.stroke', stylers: [{color: '#F6F6F6'}]},
-	        {elementType: 'labels.text.fill', stylers: [{color: '#B3B3B3'}]},
+	        {elementType: 'labels.text.fill', stylers: [{color: '#F6F6F6'}]},
 	        {
 	          featureType: 'administrative.locality',
 	          elementType: 'labels.text.fill',
-	          stylers: [{color: '#404040'}]
+	          stylers: [{color: '#000000'}]
 	        },
 	        {
 	          featureType: 'poi',
 	          elementType: 'labels.text.fill',
-	          stylers: [{color: '#404040'}]
+	          stylers: [{color: '#000000'}]
 	        },
 	        {
 	          featureType: 'poi.park',
 	          elementType: 'geometry',
-	          stylers: [{color: '#FFFFFF'}]
+	          stylers: [{color: '#000000'}]
 	        },
 	        {
 	          featureType: 'poi.park',

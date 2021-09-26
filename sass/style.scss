@@ -222,10 +222,6 @@ select, textarea {
 /***********************************
 HEADER STYLES
 ***********************************/
-.scroll-down .header {
-    @include transform(translate3d(0, -100%, 0));
-}
-
 .header {
     top: 0;
     left: 0;
@@ -391,6 +387,11 @@ HEADER STYLES
     		}
     	}
     }
+}
+
+.scroll-down .header {
+	box-shadow: none;
+    @include transform(translate3d(0, -100%, 0));
 }
 
 .sidr {
@@ -1141,13 +1142,68 @@ HOME STYLES
 		width: 100%;
 		height: 285px;
 
-		// .gmnoprint {
-		// 	display: none;
-		// }
+		.gmnoprint {
+			display: none;
+		}
+	}
+}
 
-		// button[aria-label="Toggle fullscreen view"] {
-		// 	display: none;
-		// }  
+.contact-support {
+
+	.entry-title {
+		max-width: 375px;
+		margin-bottom: 40px;
+
+		.sub-title {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.quick-contact-support {
+	padding-top: 40px;
+
+	.minus {
+		margin-bottom: -16px;
+	}
+
+	.contact-support-item {
+		max-width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 16px;
+
+		.icon {
+			width: 58px;
+			height: 58px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+			background: $primary;
+			@include border-radius(500px);
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			i {
+				color: $white;
+				font-size: 16px;
+			}
+		}
+
+		.text {
+
+			.title {
+				font-weight: 600;
+				margin-bottom: 5px;
+			}
+
+			a {
+				font-weight: 500;
+				color: $secondary;
+			}	
+		}
 	}
 }
 
