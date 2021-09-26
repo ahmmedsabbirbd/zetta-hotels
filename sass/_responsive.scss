@@ -7,6 +7,10 @@ MEDIA QUERIES
         padding-top: 70px; 
     }
 
+    .newest-blog {
+        padding-top: 70px; 
+    }
+
     .trust-quality, .explore-menu {
         padding: 60px 0;
     }
@@ -93,6 +97,13 @@ MEDIA QUERIES
 
     .page-header {
 
+        &.page-banner {
+
+            .content {
+                padding: 150px 0;
+            }
+        }
+
         .content {
             padding: 125px 0 95px;
 
@@ -103,6 +114,10 @@ MEDIA QUERIES
                 }
             }
         }
+    }
+
+    .newest-blog {
+        padding-top: 60px; 
     }
 
     // restaurant page
@@ -244,6 +259,18 @@ MEDIA QUERIES
         }
     }
 
+    .page-header.page-banner {
+        margin-bottom: 48px;
+    }
+
+    .newest-blog {
+        padding-top: 50px; 
+
+        .entry-title {
+            margin-bottom: 25px;
+        }
+    }
+
     // rooms page
     .trust-quality, .explore-menu {
         padding: 50px 0;
@@ -354,6 +381,31 @@ MEDIA QUERIES
             }
         }
     } 
+
+    .page-header.page-banner {
+
+        .content {
+            padding: 120px 0;
+        }
+    }
+
+    .best-hotel-form {
+        top: -104px;
+    }
+
+    .blog-item {
+
+        .text {
+            padding: 25px 10px;
+
+            .entry-title {
+
+                .title {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 
     // about page 
     .bring-details {
@@ -511,6 +563,14 @@ MEDIA QUERIES
 
     .page-header {
 
+        &.page-header {
+            margin-bottom: 40px;
+
+            .content {
+                padding: 80px 0;
+            }
+        }
+
         .content {
             padding: 115px 0 90px;
 
@@ -520,6 +580,26 @@ MEDIA QUERIES
                     margin-bottom: 10px;
                 }
             }
+        }
+    }
+
+    .best-hotel-form {
+        top: -86px;
+    }
+
+    .newest-blog {
+        padding-top: 30px; 
+
+        .entry-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .page-header_slider_control {
+        
+        .slick-arrow {
+            width: 40px;
+            height: 40px;
         }
     }
 

@@ -660,6 +660,7 @@ HOME STYLES
 	}
 
 	&.page-banner {
+		margin-bottom: 63px;
 
 		.content {
 			padding: 215px 0;
@@ -677,6 +678,132 @@ HOME STYLES
 			}
 		}
 	} 
+}
+
+.best-hotel-form {
+	left: 8px;
+	right: 8px;
+	top: -132px;
+	position: absolute;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+
+
+	.media {
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.page-header_slider_control {
+	
+	.slick-arrow {  
+		width: 50px;
+		height: 50px; 
+		padding: 0;
+		background: $primary;
+
+		&:before {
+			color: $black;
+			font-family: "zetta-hotels";
+		}
+
+		&.prev { 
+			background: $white;
+
+			&:before {
+				content: "\e802";
+				position: absolute;
+				@include transition(all .3s ease);
+				@include transform (translate(-7px, -9px));
+			}
+
+			&:hover {
+
+				&:before {
+					@include transform(translate(-15px, -9px));
+				}
+			}
+		}
+
+		&.next { 
+			margin-left: -4px;
+
+			&:before {
+				content: "\e800";
+				position: absolute;
+				@include transition(all .3s ease);
+				@include transform (translate(-7px, -8px));
+			}
+
+			&:hover {
+
+				&:before {
+					@include transform(translate(1px, -8px));
+				}
+			}
+		}
+	}
+}
+
+.newest-blog {
+	padding-top: 80px;
+
+	.minus {
+		margin-bottom: -16px;
+	}
+
+	.entry-title {
+		max-width: 466px;
+		margin-bottom: 40px;
+	}
+}
+
+.blog-item {
+	display: block;
+	margin-bottom: 16px;
+	background: #F8F8F8;
+
+	.media {
+		height: 212px;
+		max-width: 100%; 
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@include transition(all .3s ease);
+		}
+	}
+
+	.text {
+		padding: 24px 31px;
+
+		.entry-title {
+			margin-bottom: 0; 
+
+			.title {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&:any-link{
+
+		&:hover, &:focus {
+
+			.media {
+
+				img {
+					@include transform(scale(1.3));
+				}
+			}
+		}
+	}
 }
 
 // rooms page

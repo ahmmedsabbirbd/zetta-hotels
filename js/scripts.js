@@ -159,6 +159,23 @@
     });
 
     /*** Testimonials Slider */
+	var $pageHeaderslick;
+
+	$pageHeaderslick = $('.page-header-slider');
+
+	$pageHeaderslick.slick({
+		autoplay: true,
+	  	speed: 250,
+	  	dots: true,
+	  	arrows: true,
+	  	infinite: true, 
+	  	slidesToShow: 1, 
+	  	prevArrow: $('.page-header_slider_control .prev'),
+	  	nextArrow: $('.page-header_slider_control .next'),
+	}); 
+
+
+    /*** Testimonials Slider */
 	var $testimonialsslick;
 
 	$testimonialsslick = $('.testimonials-slider');
