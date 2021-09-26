@@ -319,7 +319,7 @@ select:focus, textarea:hover, textarea:focus {
   color: #FFF;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #5863F8;
+  background: #B1B1B1;
 }
 
 .entry-title .sub-title {
@@ -471,6 +471,17 @@ select:focus, textarea:hover, textarea:focus {
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.progress {
+  top: 0;
+  left: 0;
+  height: 4px;
+  z-index: 9999;
+  position: fixed;
+  background: #5863F8;
+  -webkit-transition: all linear 0.1s;
+  transition: all linear 0.1s;
 }
 
 /***********************************
@@ -856,6 +867,8 @@ HOME STYLES
   height: 50px;
   padding: 0;
   background: #5863F8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .page-header_slider_control .slick-arrow:before {
   color: #000;
@@ -867,14 +880,11 @@ HOME STYLES
 .page-header_slider_control .slick-arrow.prev:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translate(-7px, -9px);
   transform: translate(-7px, -9px);
 }
-.page-header_slider_control .slick-arrow.prev:hover:before {
-  -webkit-transform: translate(-15px, -9px);
-  transform: translate(-15px, -9px);
+.page-header_slider_control .slick-arrow.prev:hover {
+  background: #B1B1B1;
 }
 .page-header_slider_control .slick-arrow.next {
   margin-left: -4px;
@@ -882,14 +892,11 @@ HOME STYLES
 .page-header_slider_control .slick-arrow.next:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translate(-7px, -8px);
   transform: translate(-7px, -8px);
 }
-.page-header_slider_control .slick-arrow.next:hover:before {
-  -webkit-transform: translate(1px, -8px);
-  transform: translate(1px, -8px);
+.page-header_slider_control .slick-arrow.next:hover {
+  background: #B1B1B1;
 }
 
 .newest-blog {
@@ -1100,6 +1107,14 @@ HOME STYLES
   height: 60px;
   position: absolute;
   background: #FFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.bring-slider .slick-arrow:hover {
+  background: #5863F8;
+}
+.bring-slider .slick-arrow:hover:before {
+  color: #000;
 }
 .bring-slider .slick-arrow:before {
   color: #5863F8;
@@ -1111,14 +1126,8 @@ HOME STYLES
 .bring-slider .slick-arrow.slick-prev:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translate(-7px, -9px);
   transform: translate(-7px, -9px);
-}
-.bring-slider .slick-arrow.slick-prev:hover:before {
-  -webkit-transform: translate(-15px, -9px);
-  transform: translate(-15px, -9px);
 }
 .bring-slider .slick-arrow.slick-next {
   right: -75px;
@@ -1126,14 +1135,8 @@ HOME STYLES
 .bring-slider .slick-arrow.slick-next:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translate(-7px, -8px);
   transform: translate(-7px, -8px);
-}
-.bring-slider .slick-arrow.slick-next:hover:before {
-  -webkit-transform: translate(1px, -8px);
-  transform: translate(1px, -8px);
 }
 .bring-slider .bring-item {
   height: 100%;
@@ -1288,6 +1291,8 @@ HOME STYLES
   height: 60px;
   padding: 0;
   background: #FFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .testimonial_slider_control .slick-arrow:before {
   color: #000;
@@ -1299,14 +1304,11 @@ HOME STYLES
 .testimonial_slider_control .slick-arrow.prev:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translate(-7px, -9px);
   transform: translate(-7px, -9px);
 }
-.testimonial_slider_control .slick-arrow.prev:hover:before {
-  -webkit-transform: translate(-15px, -9px);
-  transform: translate(-15px, -9px);
+.testimonial_slider_control .slick-arrow.prev:hover {
+  background: #B1B1B1;
 }
 .testimonial_slider_control .slick-arrow.next {
   margin-left: -4px;
@@ -1314,14 +1316,11 @@ HOME STYLES
 .testimonial_slider_control .slick-arrow.next:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   -webkit-transform: translate(-7px, -8px);
   transform: translate(-7px, -8px);
 }
-.testimonial_slider_control .slick-arrow.next:hover:before {
-  -webkit-transform: translate(1px, -8px);
-  transform: translate(1px, -8px);
+.testimonial_slider_control .slick-arrow.next:hover {
+  background: #B1B1B1;
 }
 
 .contact-map {

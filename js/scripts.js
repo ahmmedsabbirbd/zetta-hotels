@@ -339,11 +339,38 @@
 	    }, 'xml');
 	});
 
-	/*** Google map */
+	$(document).on("scroll", function(){
 
+		var pixels = $(document).scrollTop();
+		// console.log(pixels);
+		var pageHeight = $(document).height() - $(window).height();
+		// console.log($(document).height());
+		// console.log($(window).height());
+		// console.log(pageHeight);
+		var progress = 100 * pixels / pageHeight;
+
+		$("div.progress").css("width", progress + "%");
+
+		// console.log(progress);
+
+		// // for(color=1; color<10; color++) {
+		// // 	console.log(color);
+		// // }
+
+		// color = ['#000', '#fff'];
+		// // console.log(color[0]);
+
+		// colorCounter = 1;
+		// var currentColor = color[colorCounter];
+
+		// console.log(currentColor);
+
+		// // $("div.progress").css("background-color", color[0]);
+	}) 
     
 }(jQuery));
 
+/*** Google map */
 var mapId = document.getElementById("map");
 
 if (mapId) {
