@@ -1,7 +1,9 @@
 /*
 Theme Name: Zetta Hotels
-Version: x.x.x.x.x
-Text Domain: zetta-hotels
+Theme URL: #
+Version: 1.0.0
+Author:  Sabbir Ahmmed
+Author URL: https://www.facebook.com/ahmmedsabbirbdme
 */
 
 /***********************************
@@ -9,63 +11,83 @@ BASE STYLES
 ***********************************/
 
 // COLORS
-$white:#FFF;
-$black:#000;
-$primary: #5863F8;
-$secondary: #B1B1B1; 
+$white: #fff;
+$black: #000;
+$primary: #5863f8;
+$secondary: #b1b1b1;
 
 // FONTS
-$pop: 'Poppins', sans-serif;
+$pop: "Poppins", sans-serif;
 
 // MIXIN
-@import 'mixin';
+@import "mixin";
 
 // ICON FONTS
-@import 'icon';
+@import "icon";
 
-@import 'base';
+@import "base";
 
 body {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	color: $black;
-	// overflow-x: hidden;
-	background: $white;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: $black;
+    // overflow-x: hidden;
+    background: $white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-	font: 400 14px/21px $pop;
+    font: 400 14px/21px $pop;
 }
 
 // FONT SIZE
-h1, .h1 { font-size: 62px; line-height: 73px; }
-h2, .h2 { font-size: 42px; line-height: 56px; }
-h3, .h3 { font-size: 24px; line-height: 35px; }
-h4, .h4 { font-size: 18px; line-height: 27px; }
-h5, .h5 { font-size: 14px; line-height: 21px; } 
+h1,
+.h1 {
+    font-size: 62px;
+    line-height: 73px;
+}
+h2,
+.h2 {
+    font-size: 42px;
+    line-height: 56px;
+}
+h3,
+.h3 {
+    font-size: 24px;
+    line-height: 35px;
+}
+h4,
+.h4 {
+    font-size: 18px;
+    line-height: 27px;
+}
+h5,
+.h5 {
+    font-size: 14px;
+    line-height: 21px;
+}
 
-
-a, button {
-
-	&:hover, &:focus {
-		outline: 0;
-		text-decoration: none;
-	}
+a,
+button {
+    &:hover,
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+    }
 }
 
 p {
-	margin: 0 0 30px;
+    margin: 0 0 30px;
 }
 
 hr {
-	margin: 0;
-	padding: 0;
-	border-color: $black;
+    margin: 0;
+    padding: 0;
+    border-color: $black;
 }
 
 section {
-	padding: 50px 0;
+    padding: 50px 0;
 }
 
 input[type="text"]:not(.select2-input),
@@ -75,159 +97,160 @@ input[type="tel"],
 input[type="search"],
 input[type="password"],
 input[type="file"],
-select, textarea {
-	width: 100% !important;
-	color: $black !important;
-	font-size: 18px !important;
-	font-weight: 400 !important;
-	box-shadow: none !important;
-	font-family: $pop !important;
-	line-height: 26px !important;
-	border-radius: 6px !important;
-	padding: 10px 15px !important;
-	background: #F7F9FF !important;
-	border: 1px solid #DBDFE8 !important;
-	@include appearance;
-	@include transition(all 0.3s ease);
-	-webkit-backface-visibility: hidden;
+select,
+textarea {
+    width: 100% !important;
+    color: $black !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    box-shadow: none !important;
+    font-family: $pop !important;
+    line-height: 26px !important;
+    border-radius: 6px !important;
+    padding: 10px 15px !important;
+    background: #f7f9ff !important;
+    border: 1px solid #dbdfe8 !important;
+    @include appearance;
+    @include transition(all 0.3s ease);
+    -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
-	@include placeholder($black, 18px, 400);
+    @include placeholder($black, 18px, 400);
 
-	&:hover, &:focus {
-		outline: 0;
-	}
+    &:hover,
+    &:focus {
+        outline: 0;
+    }
 }
 
 .btn {
-	border: 0;
-	outline: 0;
-	color: $white;  
-	border-radius: 0;
-	box-shadow: none;
-	background: $primary;
-	padding: 15px 42px;;
-	@include transition(all 0.3s ease);
+    border: 0;
+    outline: 0;
+    color: $white;
+    border-radius: 0;
+    box-shadow: none;
+    background: $primary;
+    padding: 15px 42px;
+    @include transition(all 0.3s ease);
 
-	i {
-		margin-left: 5px;
+    i {
+        margin-left: 5px;
 
-		&:before {
-			font-size: 15px;
-		}
-	}
+        &:before {
+            font-size: 15px;
+        }
+    }
 
-	&:hover, &:focus, &:active {
-		outline: 0;
-		color: $white;
-		box-shadow: none;
-		background: $secondary;
-	}
+    &:hover,
+    &:focus,
+    &:active {
+        outline: 0;
+        color: $white;
+        box-shadow: none;
+        background: $secondary;
+    }
 }
 
 .entry-title {
+    .sub-title {
+        display: block;
+        font-weight: 700;
+        color: $primary;
+    }
 
-	.sub-title {
-		display: block;
-		font-weight: 700;
-		color: $primary;
-	}
+    .title {
+        color: $black;
+    }
 
-	.title {
-		color: $black;
-	}
+    .exb {
+        font-weight: 800;
+    }
 
-	.exb {
-		font-weight: 800;
-	}
+    .seb {
+        font-weight: 600;
+    }
 
-	.seb {
-		font-weight: 600;
-	}
+    p {
+        margin: 0;
+        color: $black;
+    }
 
-	p {
-		margin: 0;
-		color: $black;
-	}
+    &.dark-description {
+        p {
+            color: $secondary;
+        }
+    }
 
-	&.dark-description {
-		
-		p {
-			color: $secondary;
-		}
-	}
+    &.white-entry-title {
+        .title {
+            color: $white;
+        }
 
-	&.white-entry-title {
-
-		.title {
-			color: $white;
-		}
-
-		p {
-			color: $white;
-		}
-	}
+        p {
+            color: $white;
+        }
+    }
 }
 
 .container {
-	width: 100%;
-	max-width: 1080px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    width: 100%;
+    max-width: 1080px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .container-fluid {
-	padding-left: 50px;
-	padding-right: 50px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .lr-8 {
-	margin-left: -8px;
-	margin-right: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
 
-	>[class*="col"] {
-		padding-left: 8px;
-		padding-right: 8px;
-	}
+    > [class*="col"] {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
-@import 'mix';
+@import "mix";
 
 .list-inline {
-	margin-left: -5px;
-	margin-right: -5px;
+    margin-left: -5px;
+    margin-right: -5px;
 
-	li {
-		padding-left: 5px;
-		padding-right: 5px;
-		display: inline-block;
-	}
+    li {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: inline-block;
+    }
 }
 
 .site-content {
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .content-area {
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 // Progress Bar
 .progress {
-	top: 0;
-	left: 0; 
-	height: 4px;
-	z-index: 9999;
-	position: fixed; 
-	background: $primary;
-	transition: all linear 0.1s; 
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 9999;
+    position: fixed;
+    background: $primary;
+    transition: all linear 0.1s;
 }
 
 /***********************************
@@ -239,169 +262,165 @@ HEADER STYLES
     right: 0;
     width: 100%;
     z-index: 1030;
-	position: fixed;
-	padding: 23.5px 0;
+    position: fixed;
+    padding: 23.5px 0;
     background: $white;
     @include transition(all 0.5s ease);
 
     &.transparent {
-    	background: transparent;
+        background: transparent;
     }
 
     &.stop {
-    	background: $black;
-    	box-shadow: 0px 0px 40px rgb(62 62 62 / 43%);
+        background: $black;
+        box-shadow: 0px 0px 40px rgb(62 62 62 / 43%);
     }
 
     .navbar {
-    	padding: 0; 
+        padding: 0;
 
-    	.container {
-    		padding-left: 15px;
-    		padding-right: 15px;
-    	}
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
-    	.navbar-header {
+        .navbar-header {
+            .logo {
+                .navbar-brand {
+                    margin: 0;
+                    padding: 0;
 
-    		.logo {
+                    .text {
+                        color: $white;
+                        display: block;
+                        font-weight: bold;
+                        @include transition(all 0.3s ease);
+                    }
 
-    			.navbar-brand {
-    				margin: 0;
-    				padding: 0;
+                    &:hover,
+                    &:focus {
+                        .text {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
 
-    				.text {
-    					color: $white;
-						display: block;  
-						font-weight: bold;
-						@include transition(all .3s ease);
-    				}
+        .navbar-collapse {
+            flex-grow: initial;
 
-    				&:hover, &:focus {
+            .navbar-nav {
+                margin-left: -22px;
+                margin-right: -22px;
 
-    					.text {
-    						color: $primary;
-    					}
-    				}
-    			}
-    		}
-    	}
+                > li {
+                    padding-left: 22px;
+                    padding-right: 22px;
 
-    	.navbar-collapse {
-    		flex-grow: initial;
+                    &:last-child {
+                        margin-right: 0;
+                    }
 
-    		.navbar-nav {
-    			margin-left: -22px;
-    			margin-right: -22px;
+                    > a {
+                        color: $white;
+                        display: block;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        @include transition(all 0.3s ease);
+                    }
 
-    			> li {
-    				padding-left: 22px;
-    				padding-right: 22px;
+                    &.dropdown {
+                        > a {
+                            &:after {
+                                display: none;
+                            }
 
-    				&:last-child {
-    					margin-right: 0;
-    				}
+                            .dropdown-toggle {
+                                &:after {
+                                    border: 0;
+                                    content: "\f107";
+                                    font-size: 21px;
+                                    padding-left: 5px;
+                                    font-family: "zetta-hotels";
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
 
-    				> a {
-    					color: $white;
-    					display: block;
-    					font-size: 15px;
-    					font-weight: 600;
-    					line-height: 21px;
-    					text-transform: uppercase;
-    					@include transition(all 0.3s ease);
-    				}
+                        .dropdown-menu {
+                            top: 150%;
+                            border: 0;
+                            margin: 0;
+                            padding: 0;
+                            opacity: 0;
+                            display: block;
+                            border-radius: 0;
+                            background: $black;
+                            visibility: hidden;
+                            @include transition(all 0.5s ease);
 
-    				&.dropdown {
+                            &:before {
+                                top: -18px;
+                                right: 30px;
+                                content: "";
+                                color: $black;
+                                z-index: -1;
+                                font-size: 6px;
+                                font-family: "zetta-hotels";
+                                position: absolute;
+                                @include transform(rotate(180deg));
+                            }
 
-    					> a {
+                            > li {
+                                > a {
+                                    color: $white;
+                                    display: block;
+                                    font-size: 15px;
+                                    font-weight: 600;
+                                    line-height: 21px;
+                                    padding: 7.5px 15px;
+                                    @include transition(all 0.3s ease);
+                                }
 
-    						&:after {
-    							display: none;
-    						}
+                                &.active,
+                                &:hover,
+                                &:focus {
+                                    a {
+                                        color: $white;
+                                        background: darken($black, 10%);
+                                    }
+                                }
+                            }
+                        }
 
-    						.dropdown-toggle {
+                        &:hover,
+                        &:focus {
+                            > .dropdown-menu {
+                                top: 100%;
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
 
-    							&:after {
-    								border: 0;
-    								content: "\f107";
-    								font-size: 21px;
-    								padding-left: 5px;
-    								font-family: "zetta-hotels";
-    								vertical-align: middle;
-    							}
-    						}
-    					}
-
-    					.dropdown-menu {
-    						top: 150%;
-    						border: 0;
-    						margin: 0;
-    						padding: 0;
-    						opacity: 0;
-    						display: block;
-    						border-radius: 0;
-    						background: $black;
-    						visibility: hidden;
-    						@include transition(all 0.5s ease);
-
-    						&:before {
-    							top: -18px;
-    							right: 30px;
-    							content: "";
-    							color: $black;
-    							z-index: -1;
-    							font-size: 6px;
-    							font-family: "zetta-hotels";
-    							position: absolute;
-    							@include transform(rotate(180deg));
-    						}
-
-    						> li {
-
-    							> a {
-    								color: $white;
-    								display: block;
-    								font-size: 15px;
-    								font-weight: 600;
-    								line-height: 21px;
-    								padding: 7.5px 15px;
-    								@include transition(all 0.3s ease);
-    							}
-
-    							&.active, &:hover, &:focus {
-
-    								a {
-    									color: $white;
-    									background: darken($black, 10%);
-    								}
-    							}
-    						}
-    					}
-
-    					&:hover, &:focus {
-
-    						> .dropdown-menu {
-    							top: 100%;
-    							opacity: 1;
-    							visibility: visible;
-    						}
-    					}
-    				}
-
-    				&.active, &:hover, &:focus {
-
-    					> a {
-    						color: $primary;
-    					}
-    				}
-    			}
-    		}
-    	}
+                    &.active,
+                    &:hover,
+                    &:focus {
+                        > a {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 .scroll-down .header {
-	box-shadow: none;
+    box-shadow: none;
     @include transform(translate3d(0, -100%, 0));
 }
 
@@ -421,111 +440,110 @@ HEADER STYLES
     box-shadow: 0px 0px 6px rgba($black, 0.3);
 
     &.right {
-	    left: auto;
-	    right: -100%
-	}
+        left: auto;
+        right: -100%;
+    }
 
-	&.left {
-	    left: -100%;
-	    right: auto
-	}
+    &.left {
+        left: -100%;
+        right: auto;
+    }
 
-	.sidr-inner {
+    .sidr-inner {
+        .mobile-header {
+            display: block !important;
 
-		.mobile-header {
-			display: block !important;
+            .navbar-header {
+                margin-bottom: 30px;
 
-			.navbar-header {
-				margin-bottom: 30px;
-				
-				.navbar-toggle {
-					margin: 0;
-					padding: 0;
-					display: block;
-					cursor: pointer;
-				}
-			}
+                .navbar-toggle {
+                    margin: 0;
+                    padding: 0;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
 
-			.navigation {
+            .navigation {
+                .navbar-nav {
+                    > li {
+                        padding-bottom: 15px;
 
-				.navbar-nav {
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
 
-					> li {
-						padding-bottom: 15px;
+                        > a {
+                            color: $white;
+                            display: block;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 26px;
+                            @include transition(all 0.3s ease);
 
-						&:last-child {
-							padding-bottom: 0;
-						}
+                            &:before,
+                            &:after {
+                                display: none;
+                            }
+                        }
 
-						> a {
-							color: $white;
-							display: block;
-							font-size: 18px;
-							font-weight: 400;
-							line-height: 26px;
-							@include transition(all 0.3s ease);
+                        &.dropdown {
+                            > a {
+                                position: relative;
 
-							&:before, &:after {
-								display: none;
-							}
-						}
+                                .dropdown-toggle {
+                                    right: 0;
+                                    position: absolute;
+                                }
+                            }
 
-						&.dropdown {
+                            .dropdown-menu {
+                                border: 0;
+                                padding: 0;
+                                line-height: 0;
+                                position: inherit;
+                                margin: 12px 0 0 20px;
+                                background: $black;
 
-							> a {
-								position: relative;
+                                li {
+                                    padding-bottom: 10px;
 
-								.dropdown-toggle {
-									right: 0;
-									position: absolute;
-								}
-							}
+                                    &:last-child {
+                                        padding-bottom: 0;
+                                    }
 
-							.dropdown-menu {
-								border: 0;
-								padding: 0;
-								line-height: 0;
-								position: inherit;
-								margin: 12px 0 0 20px;
-								background: $black;
+                                    a {
+                                        color: $white;
+                                        display: block;
+                                        font-size: 18px;
+                                        font-weight: 400;
+                                        line-height: 26px;
+                                        @include transition(all 0.3s ease);
+                                    }
 
-								li {
-									padding-bottom: 10px;
+                                    &.active,
+                                    &:hover,
+                                    &:focus {
+                                        > a {
+                                            color: $primary;
+                                        }
+                                    }
+                                }
+                            }
+                        }
 
-									&:last-child {
-										padding-bottom: 0;
-									}
-
-									a {
-										color: $white;
-										display: block;
-										font-size: 18px;
-										font-weight: 400;
-										line-height: 26px; 
-										@include transition(all 0.3s ease);
-									}
-
-									&.active, &:hover, &:focus {
-
-										> a {
-											color: $primary;
-										}
-									}
-								}
-							}
-						}
-
-						&.active, &:hover, &:focus {
-
-							> a {
-								color: $primary;
-							}
-						}
-					}
-				} 
-			}
-		}
-	}
+                        &.active,
+                        &:hover,
+                        &:focus {
+                            > a {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .navbar-toggle {
@@ -535,61 +553,58 @@ HEADER STYLES
     display: none;
     border-radius: 0;
     overflow: inherit;
-	margin: 0 0 0 15px;
+    margin: 0 0 0 15px;
     background: transparent;
 
     &:hover {
+        .icon-bar {
+            &:nth-child(1) {
+                @include transform(translateY(-2px));
+            }
 
-		.icon-bar {
-
-    		&:nth-child(1) {
-        		@include transform(translateY(-2px));
-        	}
-
-        	&:nth-child(3) {		
-				@include transform(translateY(2px));
-        	}
+            &:nth-child(3) {
+                @include transform(translateY(2px));
+            }
         }
-	}
+    }
 
-    &:hover, &:focus {
-
-    	&:before {
-			opacity: 1;
-			@include transform(translateX(0));
-    	}
+    &:hover,
+    &:focus {
+        &:before {
+            opacity: 1;
+            @include transform(translateX(0));
+        }
     }
 
     &.in {
+        .icon-bar {
+            @include transition(transform 150ms linear 150ms);
 
-    	.icon-bar {
-			@include transition(transform 150ms linear 150ms);
+            &:nth-child(1) {
+                @include transform(translateY(8px) rotate(45deg));
+            }
 
-			&:nth-child(1) {
-				@include transform(translateY(8px) rotate(45deg));
-        	}
+            &:nth-child(2) {
+                opacity: 0;
+            }
 
-        	&:nth-child(2) {
-        		opacity: 0;
-        	}
-
-        	&:nth-child(3) {	
-        		@include transform(translateY(-8px) rotate(-45deg));
-        	}
-		}
+            &:nth-child(3) {
+                @include transform(translateY(-8px) rotate(-45deg));
+            }
+        }
     }
 
     .icon-bar {
-    	width: 100%;
-    	height: 4px;
-    	display: block;
-    	border-radius: 0;
-    	background-color: $white;
-	    @include transition(transform 150ms linear 150ms);
+        width: 100%;
+        height: 4px;
+        display: block;
+        border-radius: 0;
+        background-color: $white;
+        @include transition(transform 150ms linear 150ms);
 
-	    &:not(:last-child) {
-	   		margin-bottom: 4px;
-	    }
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
     }
 }
 
@@ -597,992 +612,968 @@ HEADER STYLES
 BREADCRUMB STYLES
 ***********************************/
 .breadcrumb {
-	border: 0;
-	margin: 0;
-	z-index: 2;
-	padding: 0;
-	border-radius: 0;
-	position: relative;
-	background: transparent;
+    border: 0;
+    margin: 0;
+    z-index: 2;
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+    background: transparent;
 
-	color: $white; 
-	font-weight: 500; 
-	vertical-align: middle;
-	text-transform: uppercase; 
+    color: $white;
+    font-weight: 500;
+    vertical-align: middle;
+    text-transform: uppercase;
 
-	span {
+    span {
+        &.angle-right {
+            padding-left: 8px;
+            padding-right: 8px;
+            vertical-align: middle;
+        }
+    }
 
-		&.angle-right {
-			padding-left: 8px;
-			padding-right: 8px;
-			vertical-align: middle;
-		}
-	}
+    .current-page {
+        color: $white !important;
+        text-decoration: none !important;
+    }
 
-	.current-page {
-		color: $white !important;
-		text-decoration: none !important;
-	}
+    a {
+        color: $white;
+        vertical-align: middle;
+        @include transition(all 0.3s ease);
 
-	a {
-		color: $white;
-		vertical-align: middle;
-		@include transition(all .3s ease);
-
-		&:hover, &:focus {
-			color: $primary;
-			text-decoration: underline;
-		}
-	}
+        &:hover,
+        &:focus {
+            color: $primary;
+            text-decoration: underline;
+        }
+    }
 }
 /***********************************
 HOME STYLES
 ***********************************/
 .page-header {
-	z-index: 1;
-	position: relative;
+    z-index: 1;
+    position: relative;
 
-	&:before {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		content: "";
-		z-index: -1;
-		opacity: 0.6;
-		position: absolute;
-		background: #000;
+    &:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        z-index: -1;
+        opacity: 0.6;
+        position: absolute;
+        background: #000;
+    }
 
-	}
+    .container {
+        position: relative;
+    }
 
-	.container {
-		position: relative;
-	}
+    .content {
+        padding: 130px 0px 102px;
 
-	.content {
-		padding: 130px 0px 102px;
+        .entry-title {
+            .title {
+                margin-bottom: 15px;
+            }
+        }
+    }
 
-		.entry-title {
+    &.page-banner {
+        margin-bottom: 63px;
 
-			.title {
-				margin-bottom: 15px;
-			}
-		}
-	}
+        .content {
+            padding: 215px 0;
 
-	&.page-banner {
-		margin-bottom: 63px;
+            .entry-title {
+                max-width: 583px;
 
-		.content {
-			padding: 215px 0;
+                p {
+                    max-width: 352px;
 
-			.entry-title {
-				max-width: 583px;
-
-				p {
-					max-width: 352px;
-
-					+ p {
-						margin-top: 10px;
-					}
-				}
-			}
-		}
-	} 
+                    + p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .best-hotel-form {
-	left: 8px;
-	right: 8px;
-	top: -132px;
-	position: absolute;
-	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    left: 8px;
+    right: 8px;
+    top: -132px;
+    position: absolute;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
 
-
-	.media {
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+    .media {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 .page-header_slider_control {
-	
-	.slick-arrow {  
-		width: 50px;
-		height: 50px; 
-		padding: 0;
-		background: $primary;
-		@include transition(all .3s ease);
+    .slick-arrow {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        background: $primary;
+        @include transition(all 0.3s ease);
 
-		&:before {
-			color: $black;
-			font-family: "zetta-hotels";
-		}
+        &:before {
+            color: $black;
+            font-family: "zetta-hotels";
+        }
 
-		&.prev { 
-			background: $white;
+        &.prev {
+            background: $white;
 
-			&:before {
-				content: "\e802";
-				position: absolute; 
-				@include transform (translate(-7px, -9px));
-			}
+            &:before {
+                content: "\e802";
+                position: absolute;
+                @include transform(translate(-7px, -9px));
+            }
 
-			&:hover {
-				background: $secondary;
-			}
-		}
+            &:hover {
+                background: $secondary;
+            }
+        }
 
-		&.next { 
-			margin-left: -4px;
+        &.next {
+            margin-left: -4px;
 
-			&:before {
-				content: "\e800";
-				position: absolute; 
-				@include transform (translate(-7px, -8px));
-			}
+            &:before {
+                content: "\e800";
+                position: absolute;
+                @include transform(translate(-7px, -8px));
+            }
 
-			&:hover {
-				background: $secondary;
-			}
-		}
-	}
+            &:hover {
+                background: $secondary;
+            }
+        }
+    }
 }
 
 .newest-blog {
-	padding-top: 80px;
+    padding-top: 80px;
 
-	.minus {
-		margin-bottom: -16px;
-	}
+    .minus {
+        margin-bottom: -16px;
+    }
 
-	.entry-title {
-		max-width: 466px;
-		margin-bottom: 40px;
-	}
+    .entry-title {
+        max-width: 466px;
+        margin-bottom: 40px;
+    }
 }
 
 .blog-item {
-	display: block;
-	margin-bottom: 16px;
-	background: #F8F8F8;
+    display: block;
+    margin-bottom: 16px;
+    background: #f8f8f8;
 
-	.media {
-		height: 212px;
-		max-width: 100%; 
-		overflow: hidden;
+    .media {
+        height: 212px;
+        max-width: 100%;
+        overflow: hidden;
 
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			@include transition(all .3s ease);
-		}
-	}
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(all 0.3s ease);
+        }
+    }
 
-	.text {
-		padding: 24px 31px;
+    .text {
+        padding: 24px 31px;
 
-		.entry-title {
-			margin-bottom: 0; 
+        .entry-title {
+            margin-bottom: 0;
 
-			.title {
-				margin-bottom: 10px;
-			}
-		}
-	}
+            .title {
+                margin-bottom: 10px;
+            }
+        }
+    }
 
-	&:any-link{
-
-		&:hover, &:focus {
-
-			.media {
-
-				img {
-					@include transform(scale(1.3));
-				}
-			}
-		}
-	}
+    &:any-link {
+        &:hover,
+        &:focus {
+            .media {
+                img {
+                    @include transform(scale(1.3));
+                }
+            }
+        }
+    }
 }
 
 // rooms page
 .trust-quality {
-	padding: 70px 0;
+    padding: 70px 0;
 
-	.minus {
-		margin-bottom: -16px;
-	}
+    .minus {
+        margin-bottom: -16px;
+    }
 
-	.entry-title {
-		max-width: 375px;  
-		margin-bottom: 40px;
-	}
+    .entry-title {
+        max-width: 375px;
+        margin-bottom: 40px;
+    }
 }
 
-.trust-quality-item, .explore-menu-item { 
-	overflow: hidden;
-	background: #F8F8F8;
-	margin-bottom: 16px;
-	height: calc(100% - 16px);
+.trust-quality-item,
+.explore-menu-item {
+    overflow: hidden;
+    background: #f8f8f8;
+    margin-bottom: 16px;
+    height: calc(100% - 16px);
 
-	&.explore-menu-item {
+    &.explore-menu-item {
+        .btn {
+            padding: 16px 20px;
+        }
+    }
 
-		.btn {
-			padding: 16px 20px;
-		}
-	}
+    .media {
+        max-width: 168px;
+        margin-right: 10px;
 
-	.media { 
-		max-width: 168px;
-		margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+    .text {
+        padding: 25px 0;
+        max-width: 262px;
+        margin-right: 16px;
 
-	.text { 
-		padding: 25px 0;
-		max-width: 262px;
-		margin-right: 16px;
+        .entry-title {
+            margin-bottom: 0;
 
-		.entry-title {
-			margin-bottom: 0; 
+            .title {
+                margin-bottom: 10px;
+            }
 
-			.title {
-				margin-bottom: 10px;
-			}
+            p {
+                + p {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
 
-			p {
-				+ p {
-					margin-top: 5px;
-				}
-			}
-		}
-	}
+    .btn {
+        color: $black;
+        padding: 0px 20px;
 
-	.btn { 
-		color: $black;
-		padding: 0px 20px;
-
-		i {
-
-			&:before {
-				font-size: 25px;
-			}
-		}
-	}
+        i {
+            &:before {
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 .rooms-submit {
-	padding: 50px 0;
-	background: #F8F8F8;
+    padding: 50px 0;
+    background: #f8f8f8;
 }
 
 // restaurant page
 .visit-restaurant {
-	padding-top: 80px;
+    padding-top: 80px;
 
-	&.about {
-		padding-bottom: 80px;
+    &.about {
+        padding-bottom: 80px;
 
-		.media {
+        .media {
+            .image {
+                &:last-child {
+                    max-width: 520px;
+                }
+            }
+        }
 
-			.image {
+        .entry-title {
+            margin-left: 0;
+            margin-right: 90px;
+        }
+    }
 
-				&:last-child {
-					max-width: 520px;
-				}
-			}
-		}
+    .media {
+        height: 460px;
+        position: relative;
+        overflow: hidden;
+        margin-right: -16px;
+        margin-bottom: -16px;
 
-		.entry-title {
-			margin-left: 0;
-			margin-right: 90px;
-		}
-	}
+        .image {
+            overflow: hidden;
+            max-width: 251px;
+            margin-bottom: 16px;
+            position: absolute;
+            margin-right: 16px;
 
-	.media {
-		height: 460px;
-		position: relative;
-		overflow: hidden;
-		margin-right: -16px;
-		margin-bottom: -16px;
+            &:nth-child(2) {
+                top: 0;
+                right: 0;
+            }
 
-		.image {
-			overflow: hidden;
-			max-width: 251px;
-			margin-bottom: 16px;
-			position: absolute;
-			margin-right: 16px;
+            &:last-child {
+                right: 0;
+                bottom: 0;
+            }
 
-			&:nth-child(2) {
-				top: 0;
-				right: 0;
-			}
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 
-			&:last-child {
-				right: 0;
-				bottom: 0;
-			}
+    .entry-title {
+        max-width: 445px;
+        margin-left: 90px;
 
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-		}
-	}
+        .title {
+            margin-bottom: 10px;
+        }
 
-	.entry-title {
-		max-width: 445px;
-		margin-left: 90px;
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
 
-		.title {
-			margin-bottom: 10px;
-		}
+            + p {
+                margin-top: 10px;
+            }
+        }
 
-		p {
-			font-size: 16px;
-			font-weight: 500;
-			line-height: 25px;
-
-			+ p {
-				margin-top: 10px;
-			}
-		}
-
-		.btn {
-			margin-top: 15px;
-		}
-	}
+        .btn {
+            margin-top: 15px;
+        }
+    }
 }
 
 .explore-menu {
-	padding: 70px 0;
+    padding: 70px 0;
 
-	.minus {
-		margin-bottom: -16px;
-	}
+    .minus {
+        margin-bottom: -16px;
+    }
 
-	.entry-title {
-		max-width: 500px;  
-		margin-bottom: 40px;
-	}
+    .entry-title {
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
 }
 
 // about us
 .bring-details {
-	z-index: 1;
-	padding: 90px 0;
-	position: relative;
+    z-index: 1;
+    padding: 90px 0;
+    position: relative;
 
-	&:before {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		content: "";
-		z-index: -1;
-		opacity: 0.4;
-		background: #000;
-		position: absolute;
-	}
+    &:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        z-index: -1;
+        opacity: 0.4;
+        background: #000;
+        position: absolute;
+    }
 
-	.entry-title {
-		max-width: 375px;
-		margin-bottom: 30px;
+    .entry-title {
+        max-width: 375px;
+        margin-bottom: 30px;
 
-		.title {
-			color: $white;
-		}
-	}
+        .title {
+            color: $white;
+        }
+    }
 }
 
 .bring-slider {
+    .slick-arrow {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background: $white;
+        @include transition(all 0.3s ease);
 
-	.slick-arrow { 
-		width: 60px;
-		height: 60px;
-		position: absolute;
-		background: $white;
-		@include transition(all .3s ease);
+        &:hover {
+            background: $primary;
 
-		&:hover {
-			background: $primary;
+            &:before {
+                color: $black;
+            }
+        }
 
-			&:before {
-				color: $black;
-			}
-		}
+        &:before {
+            color: $primary;
+            font-family: "zetta-hotels";
+        }
 
-		&:before {
-			color: $primary;
-			font-family: "zetta-hotels";
-		}
+        &.slick-prev {
+            left: -75px;
 
-		&.slick-prev {
-			left: -75px;
+            &:before {
+                content: "\e802";
+                position: absolute;
+                @include transform(translate(-7px, -9px));
+            }
+        }
 
-			&:before {
-				content: "\e802";
-				position: absolute;
-				@include transform (translate(-7px, -9px));
-			} 
-		}
+        &.slick-next {
+            right: -75px;
 
-		&.slick-next {
-			right: -75px;
+            &:before {
+                content: "\e800";
+                position: absolute;
+                @include transform(translate(-7px, -8px));
+            }
+        }
+    }
 
-			&:before {
-				content: "\e800";
-				position: absolute;
-				@include transform (translate(-7px, -8px));
-			} 
-		}
-	}
+    .bring-item {
+        height: 100%;
+        display: block;
+        background: $white;
+        padding: 25px 16px;
 
-	.bring-item {
-		height: 100%;
-		display: block;
-		background: $white;
-		padding: 25px 16px;
+        .icon {
+            width: 58px;
+            height: 58px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+            background: $primary;
+            @include border-radius(500px);
 
-		.icon {
-			width: 58px;
-			height: 58px;
-			overflow: hidden;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 15px;
-			background: $primary;
-			@include border-radius(500px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
+            i {
+                color: $black;
+                font-size: 32px;
+            }
+        }
 
-			i {
-				color: $black;
-				font-size: 32px;
-			}
-		}
+        .text {
+            .title {
+                color: $black;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
 
-		.text {
+            p {
+                color: $secondary;
+                font-weight: 500px;
 
-			.title {
-				color: $black;
-				font-weight: 600;
-				margin-bottom: 20px;
-			}
-
-			p {
-				color: $secondary;
-				font-weight: 500px;
-
-				+ p {
-					margin-top: 10px;
-				}
-			}
-		}
-	}
+                + p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
 
 .trust-customers {
-	overflow: hidden;
-	position: relative; 
+    overflow: hidden;
+    position: relative;
 
-	&:after {
-		top: 0;
-		left: -9942%;
-		z-index: -1;
-		height: 100%;
-		width: 9999%;
-		content: "";
-		position: absolute;
-		background: #F8F8F8;
-	}
+    &:after {
+        top: 0;
+        left: -9942%;
+        z-index: -1;
+        height: 100%;
+        width: 9999%;
+        content: "";
+        position: absolute;
+        background: #f8f8f8;
+    }
 
-	.trust-customers-container {
-		padding: 30px 0;
-		background: #F8F8F8;
- 
-		.entry-title {
-			margin-bottom: 30px;
-		} 
+    .trust-customers-container {
+        padding: 30px 0;
+        background: #f8f8f8;
 
-	}
-	
-	.media {
-		width: 60vw;
+        .entry-title {
+            margin-bottom: 30px;
+        }
+    }
 
-		img {
-			width: 100%;
-			height: 100%;
-			max-height: 580px;
-			object-fit: cover;
-		}
-	}
+    .media {
+        width: 60vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: 580px;
+            object-fit: cover;
+        }
+    }
 }
 
 .testimonials-slider {
-	background: #F8F8F8;
+    background: #f8f8f8;
 
-	.slick-dots {
-		margin-top: 20px;
-		text-align: left;
+    .slick-dots {
+        margin-top: 20px;
+        text-align: left;
 
-		li {
-			width: 10px;
-			height: 10px;
-			background: $secondary;
-			@include border-radius(500px);
-			@include transition(all .3s ease);
+        li {
+            width: 10px;
+            height: 10px;
+            background: $secondary;
+            @include border-radius(500px);
+            @include transition(all 0.3s ease);
 
-			&.slick-active {
-				background: $primary;
-			}
-		}
-	}
+            &.slick-active {
+                background: $primary;
+            }
+        }
+    }
 
-	.testimonial-item {
-		
-		.content {
-			max-width: 350px;
+    .testimonial-item {
+        .content {
+            max-width: 350px;
 
-			.meta {
-				margin-bottom: 20px;
+            .meta {
+                margin-bottom: 20px;
 
-				.media {
-					width: 57px;
-					height: 57px;
-					overflow: hidden;
-					position: inherit;
-					margin-right: 15px;
-					@include border-radius(500px);
+                .media {
+                    width: 57px;
+                    height: 57px;
+                    overflow: hidden;
+                    position: inherit;
+                    margin-right: 15px;
+                    @include border-radius(500px);
 
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
-				}
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
 
-				.meta-details {
+                .meta-details {
+                    .name {
+                        font-weight: 600;
+                    }
 
-					.name {
-						font-weight: 600;
-					}
+                    .position {
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 18px;
+                        color: $secondary;
+                    }
+                }
+            }
 
-					.position {
-						font-size: 12px;
-						font-weight: 600;
-						line-height: 18px;
-						color: $secondary;
-					}
-				}
-			}
+            p {
+                color: $black;
+                font-weight: 500;
 
-			p {
-				color: $black;
-				font-weight: 500;
-
-				+ p {
-					margin-top: 10px;
-				}
-			}
-		}
-	}
+                + p {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }
 
 .testimonial_slider_control {
-	left: -52px;
-	z-index: 1;
-	bottom: 0;
-	margin-right: -76px; 
-	position: absolute;
+    left: -52px;
+    z-index: 1;
+    bottom: 0;
+    margin-right: -76px;
+    position: absolute;
 
-	.slick-arrow {  
-		width: 60px;
-		height: 60px; 
-		padding: 0;
-		background: $white;
-		@include transition(all .3s ease);
+    .slick-arrow {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        background: $white;
+        @include transition(all 0.3s ease);
 
-		&:before {
-			color: $black;
-			font-family: "zetta-hotels";
-		}
+        &:before {
+            color: $black;
+            font-family: "zetta-hotels";
+        }
 
-		&.prev { 
-			background: $primary;
+        &.prev {
+            background: $primary;
 
-			&:before {
-				content: "\e802";
-				position: absolute;
-				@include transform (translate(-7px, -9px));
-			}
+            &:before {
+                content: "\e802";
+                position: absolute;
+                @include transform(translate(-7px, -9px));
+            }
 
-			&:hover {
-				background: $secondary;
-			}
-		}
+            &:hover {
+                background: $secondary;
+            }
+        }
 
-		&.next { 
-			margin-left: -4px;
+        &.next {
+            margin-left: -4px;
 
-			&:before {
-				content: "\e800";
-				position: absolute; 
-				@include transform (translate(-7px, -8px));
-			}
+            &:before {
+                content: "\e800";
+                position: absolute;
+                @include transform(translate(-7px, -8px));
+            }
 
-			&:hover {
-				background: $secondary;
-			}
-		}
-	}
+            &:hover {
+                background: $secondary;
+            }
+        }
+    }
 }
 
 // contact page
 .contact-map {
-	padding: 50px 0;
+    padding: 50px 0;
 
-	#map {
-		width: 100%;
-		height: 285px;
+    #map {
+        width: 100%;
+        height: 285px;
 
-		.gmnoprint {
-			display: none;
-		}
-	}
+        .gmnoprint {
+            display: none;
+        }
+    }
 }
 
 .contact-support {
+    .entry-title {
+        max-width: 375px;
+        margin-bottom: 40px;
 
-	.entry-title {
-		max-width: 375px;
-		margin-bottom: 40px;
-
-		.sub-title {
-			text-transform: uppercase;
-		}
-	}
+        .sub-title {
+            text-transform: uppercase;
+        }
+    }
 }
 
 .quick-contact-support {
-	padding-top: 40px;
+    padding-top: 40px;
 
-	.minus {
-		margin-bottom: -16px;
-	}
+    .minus {
+        margin-bottom: -16px;
+    }
 
-	.contact-support-item {
-		max-width: 280px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 16px;
+    .contact-support-item {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
 
-		.icon {
-			width: 58px;
-			height: 58px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 10px;
-			background: $primary;
-			@include border-radius(500px);
+        .icon {
+            width: 58px;
+            height: 58px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            background: $primary;
+            @include border-radius(500px);
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-			i {
-				color: $white;
-				font-size: 16px;
-			}
-		}
+            i {
+                color: $white;
+                font-size: 16px;
+            }
+        }
 
-		.text {
+        .text {
+            .title {
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
 
-			.title {
-				font-weight: 600;
-				margin-bottom: 5px;
-			}
-
-			a {
-				font-weight: 500;
-				color: $secondary;
-			}	
-		}
-	}
+            a {
+                font-weight: 500;
+                color: $secondary;
+            }
+        }
+    }
 }
 
 /***********************************
 FOOTER STYLES
 ***********************************/
 .latest-gallery {
-	padding-top: 90px;
+    padding-top: 90px;
 
-	.entry-title {
-		max-width: 569px;
-		margin-bottom: 50px;
-	}
+    .entry-title {
+        max-width: 569px;
+        margin-bottom: 50px;
+    }
 }
 
 .gallery-slider {
+    .slick-arrow {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background: $primary;
 
-	.slick-arrow { 
-		width: 60px;
-		height: 60px;
-		position: absolute;
-		background: $primary;
+        &:before {
+            color: $black;
+            font-family: "zetta-hotels";
+        }
 
-		&:before {
-			color: $black;
-			font-family: "zetta-hotels";
-		}
+        &.slick-prev {
+            left: 68px;
 
-		&.slick-prev {
-			left: 68px;
+            &:before {
+                content: "\e802";
+                position: absolute;
+                @include transition(all 0.3s ease);
+                @include transform(translate(-7px, -9px));
+            }
 
-			&:before {
-				content: "\e802";
-				position: absolute;
-				@include transition(all .3s ease);
-				@include transform (translate(-7px, -9px));
-			}
+            &:hover {
+                &:before {
+                    @include transform(translate(-15px, -9px));
+                }
+            }
+        }
 
-			&:hover {
+        &.slick-next {
+            right: 68px;
 
-				&:before {
-					@include transform(translate(-15px, -9px));
-				}
-			}
-		}
+            &:before {
+                content: "\e800";
+                position: absolute;
+                @include transition(all 0.3s ease);
+                @include transform(translate(-7px, -8px));
+            }
 
-		&.slick-next {
-			right: 68px;
+            &:hover {
+                &:before {
+                    @include transform(translate(1px, -8px));
+                }
+            }
+        }
+    }
 
-			&:before {
-				content: "\e800";
-				position: absolute;
-				@include transition(all .3s ease);
-				@include transform (translate(-7px, -8px));
-			}
+    .gallery-item {
+        width: 352px;
+        display: block;
+        height: 352px;
+        overflow: hidden;
 
-			&:hover {
+        .media {
+            width: 100%;
+            height: 100%;
 
-				&:before {
-					@include transform(translate(1px, -8px));
-				}
-			}
-		}
-	}
-
-	.gallery-item {
-		width: 352px;
-		display: block;
-		height: 352px;
-		overflow: hidden;
-
-		.media {
-			width: 100%;
-			height: 100%;
-
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-		}
-	}
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 .footer {
-	background: #121212; 
-	padding: 90px 0 40px;
+    background: #121212;
+    padding: 90px 0 40px;
 
-	.widget {
+    .widget {
+        .footer-brand {
+            display: block;
+            margin-bottom: 20px;
 
-		.footer-brand {
-			display: block;
-			margin-bottom: 20px;
+            .text {
+                color: $white;
+                display: block;
+                font-size: 24px;
+                line-height: 35px;
+                font-weight: bold;
+                @include transition(all 0.3s ease);
+            }
 
-			.text {
-				color: $white;
-				display: block;
-				font-size: 24px;
-				line-height: 35px;
-				font-weight: bold;
-				@include transition(all .3s ease);
-			}	
+            &:hover,
+            &:focus {
+                .text {
+                    color: $primary;
+                }
+            }
+        }
 
-			&:hover, &:focus {
+        p {
+            margin: 0;
+            color: $white;
+            font-weight: 500px;
 
-				.text {
-					color: $primary;
-				}
-			}	
-		}
+            + p {
+                margin-top: 10px;
+            }
+        }
 
-		p {
-			margin: 0;
-			color: $white;
-			font-weight: 500px;
+        .social-media {
+            margin-top: 20px;
+            margin-bottom: 0;
 
-			+ p {
-				margin-top: 10px;
-			}
-		}
+            li {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    color: $white;
+                    display: block;
+                    font-size: 21px;
+                    line-height: 36px;
+                    background: $black;
+                    text-align: center;
+                    border-radius: 500px;
+                    @include transition(all 0.3s ease);
 
-		.social-media {
-			margin-top: 20px;
-			margin-bottom: 0;
+                    @each $name, $color in $social-colors {
+                        &.icon-#{$name} {
+                            background: $color;
 
-			li { 
+                            &:hover {
+                                background: darken($color, 30%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-				a {
-					width: 35px;
-					height: 35px;
-					color: $white;
-					display: block;
-					font-size: 21px;
-					line-height: 36px;
-					background: $black;
-					text-align: center;
-					border-radius: 500px;
-					@include transition(all 0.3s ease);
+        .widget-title {
+            color: $white;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
 
-					@each $name, $color in $social-colors {
+        .footer-menu {
+            margin-bottom: 0;
 
-						&.icon-#{$name} {
-							background: $color;
+            > li {
+                overflow: hidden;
+                margin-bottom: 10px;
 
-							&:hover {
-								background: darken($color, 30%);
-							}
-						}
-					}
-				}
-			}
-		}
+                &:last-child {
+                    margin-bottom: 0;
+                }
 
-		.widget-title {
-			color: $white;
-			font-weight: 600;
-			margin-bottom: 20px;
-		}
+                > a {
+                    color: $primary;
+                    display: block;
+                    font-weight: 500;
+                    @include transition(all 0.3s ease);
+                }
 
-		.footer-menu {
-			margin-bottom: 0;
+                &:hover,
+                &:focus {
+                    > a {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
 
-			> li {
-				overflow: hidden;
-				margin-bottom: 10px;
+        .quick-contact {
+            li {
+                margin-bottom: 20px;
 
-				&:last-child {
-					margin-bottom: 0;
-				}
+                &:last-child {
+                    margin-bottom: 0;
+                }
 
-				> a {
-					color: $primary;
-					display: block; 
-					font-weight: 500; 
-					@include transition(all 0.3s ease);
-				} 
+                .icon {
+                    width: 25px;
+                    font-size: 16px;
+                    color: $primary;
+                    margin-right: 10px;
+                    text-align: center;
+                }
 
-				&:hover, &:focus {
+                .text {
+                    a {
+                        display: block;
+                        color: $white;
+                        font-weight: 700;
+                        @include transition(all 0.3s ease);
 
-					> a {
-						color: $secondary;
-					}
-				}
-			}
-		}
+                        &:hover,
+                        &:focus {
+                            color: $secondary;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
 
-		.quick-contact { 
+        &-main {
+            max-width: 260px;
+        }
+    }
 
-			li {
-				margin-bottom: 20px;
+    .copyright-wrapper {
+        margin-top: 50px;
 
-				&:last-child {
-					margin-bottom: 0;
-				}
+        .copyright {
+            margin-right: 20px;
 
-				.icon {
-					width: 25px;
-					font-size: 16px;
-					color: $primary;
-					margin-right: 10px;
-					text-align: center;
-				}
+            p {
+                margin: 0;
+                color: $white;
+                font-weight: 500;
 
-				.text {
+                a {
+                    color: $primary;
+                    font-weight: 500;
+                    @include transition(all 0.3s ease);
 
-					a {
-						display: block;
-						color: $white;
-						font-weight: 700; 
-						@include transition(all 0.3s ease);
+                    &:hover,
+                    &:focus {
+                        color: $secondary;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
 
-						&:hover, &:focus {
-							color: $secondary;
-							text-decoration: underline;
-						}
-					}
-				}
-			}
-		}
+        .portfolio-website {
+            a {
+                font-weight: 500;
 
-		&-main {
-			max-width: 260px;
-		}
-	}
-
-	.copyright-wrapper {
-		margin-top: 50px;
-
-		.copyright {
-			margin-right: 20px;
-
-			p {
-				margin: 0;
-				color: $white; 
-				font-weight: 500;
-
-				a {
-					color: $primary; 
-					font-weight: 500;
-					@include transition(all 0.3s ease);
-
-					&:hover, &:focus {
-						color: $secondary;
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-
-		.portfolio-website {
-
-			a {
-				font-weight: 500;
-
-				&:hover, &:focus {
-					color: $secondary;
-					text-decoration: underline;
-				}
-			}
-		}
-	}
+                &:hover,
+                &:focus {
+                    color: $secondary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
-
-@import 'responsive'; 
+@import "responsive";

@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /*
 Theme Name: Zetta Hotels
-Version: x.x.x.x.x
-Text Domain: zetta-hotels
+Theme URL: #
+Version: 1.0.0
+Author:  Sabbir Ahmmed
+Author URL: https://ahmmedsabbirbd.github.io/sabbir.me/html
+Text Domin: zetta-hotels
+Description: It's my frist project.. I feel happy. Beacuse It's not complicated for me.
+Tag: One Column, Header, footer, Coustom Color. 
 */
 /***********************************
 BASE STYLES
@@ -133,39 +138,46 @@ body {
   width: 100%;
   height: 100%;
   color: #000;
-  background: #FFF;
+  background: #fff;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font: 400 14px/21px "Poppins", sans-serif;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 62px;
   line-height: 73px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 42px;
   line-height: 56px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px;
   line-height: 35px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 18px;
   line-height: 27px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 14px;
   line-height: 21px;
 }
 
-a:hover, a:focus, button:hover, button:focus {
+a:hover, a:focus,
+button:hover,
+button:focus {
   outline: 0;
   text-decoration: none;
 }
@@ -191,7 +203,8 @@ input[type=tel],
 input[type=search],
 input[type=password],
 input[type=file],
-select, textarea {
+select,
+textarea {
   width: 100% !important;
   color: #000 !important;
   font-size: 18px !important;
@@ -202,8 +215,8 @@ select, textarea {
   line-height: 26px !important;
   border-radius: 6px !important;
   padding: 10px 15px !important;
-  background: #F7F9FF !important;
-  border: 1px solid #DBDFE8 !important;
+  background: #f7f9ff !important;
+  border: 1px solid #dbdfe8 !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -221,7 +234,8 @@ input[type=tel]::-webkit-inner-spin-button,
 input[type=search]::-webkit-inner-spin-button,
 input[type=password]::-webkit-inner-spin-button,
 input[type=file]::-webkit-inner-spin-button,
-select::-webkit-inner-spin-button, textarea::-webkit-inner-spin-button {
+select::-webkit-inner-spin-button,
+textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   cursor: pointer;
   display: block;
@@ -237,7 +251,8 @@ input[type=tel]::-webkit-input-placeholder,
 input[type=search]::-webkit-input-placeholder,
 input[type=password]::-webkit-input-placeholder,
 input[type=file]::-webkit-input-placeholder,
-select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 400;
@@ -249,7 +264,8 @@ input[type=tel]::-moz-placeholder,
 input[type=search]::-moz-placeholder,
 input[type=password]::-moz-placeholder,
 input[type=file]::-moz-placeholder,
-select::-moz-placeholder, textarea::-moz-placeholder {
+select::-moz-placeholder,
+textarea::-moz-placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 400;
@@ -261,7 +277,8 @@ input[type=tel]:-ms-input-placeholder,
 input[type=search]:-ms-input-placeholder,
 input[type=password]:-ms-input-placeholder,
 input[type=file]:-ms-input-placeholder,
-select:-ms-input-placeholder, textarea:-ms-input-placeholder {
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 400;
@@ -273,7 +290,8 @@ input[type=tel]:-moz-placeholder,
 input[type=search]:-moz-placeholder,
 input[type=password]:-moz-placeholder,
 input[type=file]:-moz-placeholder,
-select:-moz-placeholder, textarea:-moz-placeholder {
+select:-moz-placeholder,
+textarea:-moz-placeholder {
   color: #000;
   font-size: 18px;
   font-weight: 400;
@@ -292,18 +310,20 @@ input[type=password]:focus,
 input[type=file]:hover,
 input[type=file]:focus,
 select:hover,
-select:focus, textarea:hover, textarea:focus {
+select:focus,
+textarea:hover,
+textarea:focus {
   outline: 0;
 }
 
 .btn {
   border: 0;
   outline: 0;
-  color: #FFF;
+  color: #fff;
   border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #5863F8;
+  background: #5863f8;
   padding: 15px 42px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -316,16 +336,16 @@ select:focus, textarea:hover, textarea:focus {
 }
 .btn:hover, .btn:focus, .btn:active {
   outline: 0;
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: #B1B1B1;
+  background: #b1b1b1;
 }
 
 .entry-title .sub-title {
   display: block;
   font-weight: 700;
-  color: #5863F8;
+  color: #5863f8;
 }
 .entry-title .title {
   color: #000;
@@ -341,13 +361,13 @@ select:focus, textarea:hover, textarea:focus {
   color: #000;
 }
 .entry-title.dark-description p {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 .entry-title.white-entry-title .title {
-  color: #FFF;
+  color: #fff;
 }
 .entry-title.white-entry-title p {
-  color: #FFF;
+  color: #fff;
 }
 
 .container {
@@ -479,7 +499,7 @@ select:focus, textarea:hover, textarea:focus {
   height: 4px;
   z-index: 9999;
   position: fixed;
-  background: #5863F8;
+  background: #5863f8;
   -webkit-transition: all linear 0.1s;
   transition: all linear 0.1s;
 }
@@ -495,7 +515,7 @@ HEADER STYLES
   z-index: 1030;
   position: fixed;
   padding: 23.5px 0;
-  background: #FFF;
+  background: #fff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -519,14 +539,14 @@ HEADER STYLES
   padding: 0;
 }
 .header .navbar .navbar-header .logo .navbar-brand .text {
-  color: #FFF;
+  color: #fff;
   display: block;
   font-weight: bold;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .header .navbar .navbar-header .logo .navbar-brand:hover .text, .header .navbar .navbar-header .logo .navbar-brand:focus .text {
-  color: #5863F8;
+  color: #5863f8;
 }
 .header .navbar .navbar-collapse {
   -webkit-box-flex: initial;
@@ -545,7 +565,7 @@ HEADER STYLES
   margin-right: 0;
 }
 .header .navbar .navbar-collapse .navbar-nav > li > a {
-  color: #FFF;
+  color: #fff;
   display: block;
   font-size: 15px;
   font-weight: 600;
@@ -591,7 +611,7 @@ HEADER STYLES
   transform: rotate(180deg);
 }
 .header .navbar .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu > li > a {
-  color: #FFF;
+  color: #fff;
   display: block;
   font-size: 15px;
   font-weight: 600;
@@ -601,7 +621,7 @@ HEADER STYLES
   transition: all 0.3s ease;
 }
 .header .navbar .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu > li.active a, .header .navbar .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu > li:hover a, .header .navbar .navbar-collapse .navbar-nav > li.dropdown .dropdown-menu > li:focus a {
-  color: #FFF;
+  color: #fff;
   background: black;
 }
 .header .navbar .navbar-collapse .navbar-nav > li.dropdown:hover > .dropdown-menu, .header .navbar .navbar-collapse .navbar-nav > li.dropdown:focus > .dropdown-menu {
@@ -610,7 +630,7 @@ HEADER STYLES
   visibility: visible;
 }
 .header .navbar .navbar-collapse .navbar-nav > li.active > a, .header .navbar .navbar-collapse .navbar-nav > li:hover > a, .header .navbar .navbar-collapse .navbar-nav > li:focus > a {
-  color: #5863F8;
+  color: #5863f8;
 }
 
 .scroll-down .header {
@@ -663,7 +683,7 @@ HEADER STYLES
   padding-bottom: 0;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li > a {
-  color: #FFF;
+  color: #fff;
   display: block;
   font-size: 18px;
   font-weight: 400;
@@ -696,7 +716,7 @@ HEADER STYLES
   padding-bottom: 0;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.dropdown .dropdown-menu li a {
-  color: #FFF;
+  color: #fff;
   display: block;
   font-size: 18px;
   font-weight: 400;
@@ -705,10 +725,10 @@ HEADER STYLES
   transition: all 0.3s ease;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.dropdown .dropdown-menu li.active > a, .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.dropdown .dropdown-menu li:hover > a, .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.dropdown .dropdown-menu li:focus > a {
-  color: #5863F8;
+  color: #5863f8;
 }
 .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li.active > a, .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li:hover > a, .sidr .sidr-inner .mobile-header .navigation .navbar-nav > li:focus > a {
-  color: #5863F8;
+  color: #5863f8;
 }
 
 .navbar-toggle {
@@ -757,7 +777,7 @@ HEADER STYLES
   height: 4px;
   display: block;
   border-radius: 0;
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-transition: transform 150ms linear 150ms;
   -webkit-transition: -webkit-transform 150ms linear 150ms;
   transition: -webkit-transform 150ms linear 150ms;
@@ -779,7 +799,7 @@ BREADCRUMB STYLES
   border-radius: 0;
   position: relative;
   background: transparent;
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
   vertical-align: middle;
   text-transform: uppercase;
@@ -790,17 +810,17 @@ BREADCRUMB STYLES
   vertical-align: middle;
 }
 .breadcrumb .current-page {
-  color: #FFF !important;
+  color: #fff !important;
   text-decoration: none !important;
 }
 .breadcrumb a {
-  color: #FFF;
+  color: #fff;
   vertical-align: middle;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .breadcrumb a:hover, .breadcrumb a:focus {
-  color: #5863F8;
+  color: #5863f8;
   text-decoration: underline;
 }
 
@@ -866,7 +886,7 @@ HOME STYLES
   width: 50px;
   height: 50px;
   padding: 0;
-  background: #5863F8;
+  background: #5863f8;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -875,7 +895,7 @@ HOME STYLES
   font-family: "zetta-hotels";
 }
 .page-header_slider_control .slick-arrow.prev {
-  background: #FFF;
+  background: #fff;
 }
 .page-header_slider_control .slick-arrow.prev:before {
   content: "";
@@ -884,7 +904,7 @@ HOME STYLES
   transform: translate(-7px, -9px);
 }
 .page-header_slider_control .slick-arrow.prev:hover {
-  background: #B1B1B1;
+  background: #b1b1b1;
 }
 .page-header_slider_control .slick-arrow.next {
   margin-left: -4px;
@@ -896,7 +916,7 @@ HOME STYLES
   transform: translate(-7px, -8px);
 }
 .page-header_slider_control .slick-arrow.next:hover {
-  background: #B1B1B1;
+  background: #b1b1b1;
 }
 
 .newest-blog {
@@ -913,7 +933,7 @@ HOME STYLES
 .blog-item {
   display: block;
   margin-bottom: 16px;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .blog-item .media {
   height: 212px;
@@ -961,50 +981,60 @@ HOME STYLES
   margin-bottom: 40px;
 }
 
-.trust-quality-item, .explore-menu-item {
+.trust-quality-item,
+.explore-menu-item {
   overflow: hidden;
-  background: #F8F8F8;
+  background: #f8f8f8;
   margin-bottom: 16px;
   height: calc(100% - 16px);
 }
-.trust-quality-item.explore-menu-item .btn, .explore-menu-item.explore-menu-item .btn {
+.trust-quality-item.explore-menu-item .btn,
+.explore-menu-item.explore-menu-item .btn {
   padding: 16px 20px;
 }
-.trust-quality-item .media, .explore-menu-item .media {
+.trust-quality-item .media,
+.explore-menu-item .media {
   max-width: 168px;
   margin-right: 10px;
 }
-.trust-quality-item .media img, .explore-menu-item .media img {
+.trust-quality-item .media img,
+.explore-menu-item .media img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.trust-quality-item .text, .explore-menu-item .text {
+.trust-quality-item .text,
+.explore-menu-item .text {
   padding: 25px 0;
   max-width: 262px;
   margin-right: 16px;
 }
-.trust-quality-item .text .entry-title, .explore-menu-item .text .entry-title {
+.trust-quality-item .text .entry-title,
+.explore-menu-item .text .entry-title {
   margin-bottom: 0;
 }
-.trust-quality-item .text .entry-title .title, .explore-menu-item .text .entry-title .title {
+.trust-quality-item .text .entry-title .title,
+.explore-menu-item .text .entry-title .title {
   margin-bottom: 10px;
 }
-.trust-quality-item .text .entry-title p + p, .explore-menu-item .text .entry-title p + p {
+.trust-quality-item .text .entry-title p + p,
+.explore-menu-item .text .entry-title p + p {
   margin-top: 5px;
 }
-.trust-quality-item .btn, .explore-menu-item .btn {
+.trust-quality-item .btn,
+.explore-menu-item .btn {
   color: #000;
   padding: 0px 20px;
 }
-.trust-quality-item .btn i:before, .explore-menu-item .btn i:before {
+.trust-quality-item .btn i:before,
+.explore-menu-item .btn i:before {
   font-size: 25px;
 }
 
 .rooms-submit {
   padding: 50px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
 .visit-restaurant {
@@ -1099,25 +1129,25 @@ HOME STYLES
   margin-bottom: 30px;
 }
 .bring-details .entry-title .title {
-  color: #FFF;
+  color: #fff;
 }
 
 .bring-slider .slick-arrow {
   width: 60px;
   height: 60px;
   position: absolute;
-  background: #FFF;
+  background: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .bring-slider .slick-arrow:hover {
-  background: #5863F8;
+  background: #5863f8;
 }
 .bring-slider .slick-arrow:hover:before {
   color: #000;
 }
 .bring-slider .slick-arrow:before {
-  color: #5863F8;
+  color: #5863f8;
   font-family: "zetta-hotels";
 }
 .bring-slider .slick-arrow.slick-prev {
@@ -1141,7 +1171,7 @@ HOME STYLES
 .bring-slider .bring-item {
   height: 100%;
   display: block;
-  background: #FFF;
+  background: #fff;
   padding: 25px 16px;
 }
 .bring-slider .bring-item .icon {
@@ -1151,7 +1181,7 @@ HOME STYLES
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  background: #5863F8;
+  background: #5863f8;
   border-radius: 500px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -1177,7 +1207,7 @@ HOME STYLES
   margin-bottom: 20px;
 }
 .bring-slider .bring-item .text p {
-  color: #B1B1B1;
+  color: #b1b1b1;
   font-weight: 500px;
 }
 .bring-slider .bring-item .text p + p {
@@ -1196,11 +1226,11 @@ HOME STYLES
   width: 9999%;
   content: "";
   position: absolute;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .trust-customers .trust-customers-container {
   padding: 30px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .trust-customers .trust-customers-container .entry-title {
   margin-bottom: 30px;
@@ -1217,7 +1247,7 @@ HOME STYLES
 }
 
 .testimonials-slider {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 .testimonials-slider .slick-dots {
   margin-top: 20px;
@@ -1226,7 +1256,7 @@ HOME STYLES
 .testimonials-slider .slick-dots li {
   width: 10px;
   height: 10px;
-  background: #B1B1B1;
+  background: #b1b1b1;
   border-radius: 500px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -1236,7 +1266,7 @@ HOME STYLES
   transition: all 0.3s ease;
 }
 .testimonials-slider .slick-dots li.slick-active {
-  background: #5863F8;
+  background: #5863f8;
 }
 .testimonials-slider .testimonial-item .content {
   max-width: 350px;
@@ -1269,7 +1299,7 @@ HOME STYLES
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 .testimonials-slider .testimonial-item .content p {
   color: #000;
@@ -1290,7 +1320,7 @@ HOME STYLES
   width: 60px;
   height: 60px;
   padding: 0;
-  background: #FFF;
+  background: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1299,7 +1329,7 @@ HOME STYLES
   font-family: "zetta-hotels";
 }
 .testimonial_slider_control .slick-arrow.prev {
-  background: #5863F8;
+  background: #5863f8;
 }
 .testimonial_slider_control .slick-arrow.prev:before {
   content: "";
@@ -1308,7 +1338,7 @@ HOME STYLES
   transform: translate(-7px, -9px);
 }
 .testimonial_slider_control .slick-arrow.prev:hover {
-  background: #B1B1B1;
+  background: #b1b1b1;
 }
 .testimonial_slider_control .slick-arrow.next {
   margin-left: -4px;
@@ -1320,7 +1350,7 @@ HOME STYLES
   transform: translate(-7px, -8px);
 }
 .testimonial_slider_control .slick-arrow.next:hover {
-  background: #B1B1B1;
+  background: #b1b1b1;
 }
 
 .contact-map {
@@ -1360,7 +1390,7 @@ HOME STYLES
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  background: #5863F8;
+  background: #5863f8;
   border-radius: 500px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -1377,7 +1407,7 @@ HOME STYLES
           justify-content: center;
 }
 .quick-contact-support .contact-support-item .icon i {
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
 }
 .quick-contact-support .contact-support-item .text .title {
@@ -1386,7 +1416,7 @@ HOME STYLES
 }
 .quick-contact-support .contact-support-item .text a {
   font-weight: 500;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 /***********************************
@@ -1404,7 +1434,7 @@ FOOTER STYLES
   width: 60px;
   height: 60px;
   position: absolute;
-  background: #5863F8;
+  background: #5863f8;
 }
 .gallery-slider .slick-arrow:before {
   color: #000;
@@ -1466,7 +1496,7 @@ FOOTER STYLES
   margin-bottom: 20px;
 }
 .footer .widget .footer-brand .text {
-  color: #FFF;
+  color: #fff;
   display: block;
   font-size: 24px;
   line-height: 35px;
@@ -1475,11 +1505,11 @@ FOOTER STYLES
   transition: all 0.3s ease;
 }
 .footer .widget .footer-brand:hover .text, .footer .widget .footer-brand:focus .text {
-  color: #5863F8;
+  color: #5863f8;
 }
 .footer .widget p {
   margin: 0;
-  color: #FFF;
+  color: #fff;
   font-weight: 500px;
 }
 .footer .widget p + p {
@@ -1492,7 +1522,7 @@ FOOTER STYLES
 .footer .widget .social-media li a {
   width: 35px;
   height: 35px;
-  color: #FFF;
+  color: #fff;
   display: block;
   font-size: 21px;
   line-height: 36px;
@@ -1599,7 +1629,7 @@ FOOTER STYLES
   background: #660000;
 }
 .footer .widget .widget-title {
-  color: #FFF;
+  color: #fff;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -1614,14 +1644,14 @@ FOOTER STYLES
   margin-bottom: 0;
 }
 .footer .widget .footer-menu > li > a {
-  color: #5863F8;
+  color: #5863f8;
   display: block;
   font-weight: 500;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .footer .widget .footer-menu > li:hover > a, .footer .widget .footer-menu > li:focus > a {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 .footer .widget .quick-contact li {
   margin-bottom: 20px;
@@ -1632,19 +1662,19 @@ FOOTER STYLES
 .footer .widget .quick-contact li .icon {
   width: 25px;
   font-size: 16px;
-  color: #5863F8;
+  color: #5863f8;
   margin-right: 10px;
   text-align: center;
 }
 .footer .widget .quick-contact li .text a {
   display: block;
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .footer .widget .quick-contact li .text a:hover, .footer .widget .quick-contact li .text a:focus {
-  color: #B1B1B1;
+  color: #b1b1b1;
   text-decoration: underline;
 }
 .footer .widget-main {
@@ -1658,24 +1688,24 @@ FOOTER STYLES
 }
 .footer .copyright-wrapper .copyright p {
   margin: 0;
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
 }
 .footer .copyright-wrapper .copyright p a {
-  color: #5863F8;
+  color: #5863f8;
   font-weight: 500;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .footer .copyright-wrapper .copyright p a:hover, .footer .copyright-wrapper .copyright p a:focus {
-  color: #B1B1B1;
+  color: #b1b1b1;
   text-decoration: underline;
 }
 .footer .copyright-wrapper .portfolio-website a {
   font-weight: 500;
 }
 .footer .copyright-wrapper .portfolio-website a:hover, .footer .copyright-wrapper .portfolio-website a:focus {
-  color: #B1B1B1;
+  color: #b1b1b1;
   text-decoration: underline;
 }
 
