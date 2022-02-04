@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <link rel="icon" type="image/png" href="<?= get_theme_file_uri(); ?>/images/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home | Zetta Hotels</title> 
+    <title>Home | <?php bloginfo('name'); ?></title> 
     
     <!-- Bootstrap -->
     <link href="<?= get_theme_file_uri(); ?>/css/plugins.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800" rel="stylesheet">
 </head>
-<body>
+<body <?php body_class(); ?>> 
     <div class="progress"></div>
     
     <div id="sidr">
@@ -60,6 +60,13 @@
                 </div>
         
                 <div class="collapse navbar-collapse">
+
+                        <!-- <?php 
+                            wp_nav_menu(array(
+                                'theme_location'    =>'header menu'
+                            ));
+                        ?>| -->
+
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li class="dropdown">
