@@ -27,7 +27,15 @@
             </div>
 
             <div class="navigation">
-                <ul class="nav navbar-nav">
+
+                <?php 
+                    wp_nav_menu(array(
+                        'theme_location'    =>'header_menu',
+                        'menu_class'        =>'nav navbar-nav',
+                    ));
+                ?> <!-- /Dynamic Header code -->
+                
+                <!-- <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
                     <li class="dropdown">
                         <a href="rooms.php">Rooms<span class="dropdown-toggle" data-toggle="dropdown"></span></a>
@@ -43,7 +51,7 @@
                     <li><a href="about-us.php">About us</a></li>
                     <li><a href="contact.php">Blog</a></li>
                     <li><a href="contact.php">contact</a></li>
-                </ul> 
+                </ul> --> 
             </div>
         </div>
     </div><!-- /mobile-header -->
@@ -61,13 +69,14 @@
         
                 <div class="collapse navbar-collapse">
 
-                        <!-- <?php 
-                            wp_nav_menu(array(
-                                'theme_location'    =>'header menu'
-                            ));
-                        ?>| -->
+                     <?php 
+                        wp_nav_menu(array(
+                            'theme_location'    =>'header_menu',
+                            'menu_class'        =>'navbar-nav',
+                        ));
+                    ?> <!-- /Dynamic Header code -->
 
-                    <ul class="nav navbar-nav">
+                    <!-- <ul class="nav navbar-nav">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li class="dropdown">
                             <a href="rooms.php">Rooms<span class="dropdown-toggle" data-toggle="dropdown"></span></a>
@@ -83,7 +92,7 @@
                         <li><a href="about-us.php">About us</a></li>
                         <li><a href="contact.php">Blog</a></li>
                         <li><a href="contact.php">contact</a></li>
-                    </ul>
+                    </ul> --> 
 
                     <ul class="navbar-nav navbar-nav-right">
                         <li class="mobile-navbar-toggler d-xl-none">

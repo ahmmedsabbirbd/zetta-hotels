@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+    /*
+        Template Name: Rooms
+    */
+    get_header(); 
+?> 
 
     <div id="primary" class="content-area"> 
         

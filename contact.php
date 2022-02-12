@@ -1,4 +1,9 @@
-<?php get_header(); ?> 
+<?php 
+    /*
+        Template Name: Contact
+    */
+    get_header(); 
+?> 
 
     <div id="primary" class="content-area">  
         <section class="contact-map">

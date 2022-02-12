@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php 
+    /*
+        Template Name: Restaurant
+    */
+    get_header(); 
+?> 
 
     <div id="primary" class="content-area">  
         <section class="visit-restaurant">
