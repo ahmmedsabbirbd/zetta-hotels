@@ -60,10 +60,8 @@
         <div class="navbar navbar-expand">
             <div class="container d-flex align-items-center justify-content-between">
                 <div class="navbar-header">
-                    <div class="logo">
-                        <a class="navbar-brand" href="index.php">
-                            <span class="text">Zetta Hotels</span>
-                        </a>
+                    <div class="logo"> 
+                        <?php the_custom_logo(); ?> 
                     </div>
                 </div>
         
@@ -73,6 +71,7 @@
                         wp_nav_menu(array(
                             'theme_location'    =>'header_menu',
                             'menu_class'        =>'navbar-nav',
+                            'fallback_cb'        => false,
                         ));
                     ?> <!-- /Dynamic Header code -->
 
