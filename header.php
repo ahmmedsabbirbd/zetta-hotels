@@ -32,6 +32,7 @@
                     wp_nav_menu(array(
                         'theme_location'    =>'header_menu',
                         'menu_class'        =>'nav navbar-nav',
+                        'fallback_cb'        => false,
                     ));
                 ?> <!-- /Dynamic Header code -->
                 

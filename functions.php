@@ -9,10 +9,11 @@
     add_theme_support('post-thumbnails');
 
      /***  Menu Id */
-    register_nav_menus(
-        array(
-            'header_menu', 'header_menu',
-    ));
+    // register_nav_menus(
+    //     array(
+    //         'header_menu', 'header_menu',
+    // ));
+    register_nav_menu('header_menu', 'header_menu');
 
     /**
      * Changes the class on the custom logo in the header.php
