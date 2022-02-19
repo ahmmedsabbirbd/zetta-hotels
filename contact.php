@@ -5,6 +5,8 @@
     get_header(); 
 ?> 
 
+
+    
     <div id="primary" class="content-area">  
         <section class="contact-map">
             <div class="container">

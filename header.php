@@ -108,13 +108,21 @@
         </div><!--/ Navbar -->
     </header> <!-- /header -->
 
+    <?php 
+        $banner = get_field( 'content' );
+    ?>
+
     <section class="page-header parallax page-banner" style="background: #f1f1f1 url(<?= get_theme_file_uri(); ?>/images/banner.jpg)no-repeat fixed center 16%/cover;">
         <div class="container">
             <div class="row page-header-slider lr-8">
                 <div class="col-12">
                     <div class="content">
                         <div class="entry-title white-entry-title">
-                            <h1 class="title exb">The best hotel you will ever need</h1>
+                            <?php 
+                                if ($banner) {
+                                    printf( '<h1 class="title exb">%s</h1>', $banner ); 
+                                } 
+                            ?>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
