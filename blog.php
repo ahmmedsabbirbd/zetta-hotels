@@ -24,7 +24,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <a href="#" class="blog-item">
                             <div class="media">
-                                <img src="<?php the_post_thumbnail(); ?>" class="img-fluid" alt="">
+                                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" class="img-fluid" alt="">
                             </div>
 
                             <div class="text text-center">

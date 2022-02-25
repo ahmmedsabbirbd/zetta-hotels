@@ -8,7 +8,22 @@
     add_theme_support('custom-background');
     add_theme_support('post-thumbnails');
 
-     /***  Menu Id */
+    /***  Menu Id */
+    function sidebar_add(){
+        register_sidebar( array(
+            'name'  => 'Right Sidebar',
+            'id'    => 'rs',
+            'description' => 'All link here',
+            'before_widget' => '<ul>',
+            'after_widget' => '</ul>',
+            'before_title' => '<h2>',
+            'after_title' => '</h2>',
+        ));
+    }
+
+    add_action('widgets_init', 'sidebar_add');
+
+    /***  Menu Id */
     // register_nav_menus(
     //     array(
     //         'header_menu', 'header_menu',
