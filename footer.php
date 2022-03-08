@@ -140,7 +140,7 @@
                 <div class="col-12">
                     <div class="copyright-wrapper d-flex  flex-wrap align-items-center justify-content-md-between">
                         <div class="copyright">
-                            <p>Copyright &copy;2020 All rights reserved | This template is made with love by <a href="https://www.facebook.com/ahmmedsabbirbdme" target="_blank">Sabbir Ahmmed</a></p>
+                            <p><?php echo get_theme_mod('copyright_section') ?></p>
                         </div>
 
                         <div class="portfolio-website">
