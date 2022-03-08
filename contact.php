@@ -18,6 +18,8 @@
             </div>
         </section><!-- /contact-map -->
 
+        <?php echo get_search_form(); ?>
+
         <section class="contact-support">
             <div class="container">
                 <div class="row lr-8">

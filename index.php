@@ -246,6 +246,13 @@
                 </div>
 
                 <div class="row lr-8 minus">
+                     <?php 
+
+                        if( !have_posts() ) { 
+                            echo "<h3>No Post found</h3>"; 
+                        }  
+                    ?>
+                    
                     <?php while( have_posts() ) : the_post(); ?>
 
                     <div class="col-lg-4 col-sm-6">
